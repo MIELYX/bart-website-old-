@@ -1,0 +1,20 @@
+@use './colors' as *;
+
+.container{
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.btn {
+	padding: 16px 32px;
+	border-radius: 12px;
+	background-color: $btn;
+	color: $btn-text;
+	&:hover {
+		background-color: $btn-hover;
+		color: $btn-text-hover;
+	}
+}
+

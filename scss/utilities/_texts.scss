@@ -1,0 +1,91 @@
+@use './colors' as *;
+.heading {
+	font-family: 'Poppins';
+	font-style: normal;
+	color: $heading;
+	&-first {
+		font-weight: 900;
+		font-size: 80px;
+		line-height: 100px;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+	}
+	&-second {
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 136.02%;
+	}
+	&-third,
+	&-fourth {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 136.52%;
+	}
+	&-orange {
+		color: $orange;
+	}
+}
+.text,
+.btn {
+	font-family: 'Inter';
+	font-style: normal;
+}
+
+.text {
+	font-weight: 400;
+	color: $text;
+	&-first {
+		font-size: 20px;
+		line-height: 136.02%;
+		color: $text-muted;
+	}
+	&-second {
+		font-size: 16px;
+		line-height: 162.02%;
+		font-feature-settings: 'salt' on;
+	}
+	&-third {
+		font-size: 14px;
+		line-height: 164.43%;
+		font-feature-settings: 'salt' on;
+	}
+	&-fourth {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 150%;
+		color: $text-muted;
+	}
+}
+
+.btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 100%;
+}
+
+@media (min-width: 576px) {
+	.heading {
+		&-first {
+			font-size: 80px;
+			line-height: 100px;
+		}
+		&-second {
+			font-weight: 900;
+			font-size: 40px;
+			line-height: 150%;
+		}
+		&-third {
+			font-weight: 800;
+			font-size: 36px;
+		}
+	}
+	.text {
+		&-third {
+			font-size: 18px;
+		}
+	}
+	.btn {
+		font-size: 16px;
+		line-height: 150%;
+	}
+}

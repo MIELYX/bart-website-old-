@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.heading {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+.heading-first {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 100px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.heading-second {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 136.02%;
+}
+.heading-third, .heading-fourth {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.52%;
+}
+.heading-orange {
+  color: #e5af4a;
+}
+
+.text,
+.btn {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.text {
+  font-weight: 400;
+  color: #f2f2f2;
+}
+.text-first {
+  font-size: 20px;
+  line-height: 136.02%;
+  color: #828391;
+}
+.text-second {
+  font-size: 16px;
+  line-height: 162.02%;
+  font-feature-settings: "salt" on;
+}
+.text-third {
+  font-size: 14px;
+  line-height: 164.43%;
+  font-feature-settings: "salt" on;
+}
+.text-fourth {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  color: #828391;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+@media (min-width: 576px) {
+  .heading-first {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .heading-second {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 150%;
+  }
+  .heading-third {
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .text-third {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  color: #050623;
+}
+.btn:hover {
+  background-color: #050623;
+  color: #f2f2f2;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #050623;
+}/*# sourceMappingURL=style.css.map */
