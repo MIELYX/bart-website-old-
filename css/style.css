@@ -99,7 +99,6 @@ table {
   font-size: 12px;
   line-height: 150%;
   color: #828391;
-  text-align: center;
 }
 .text-navitem {
   font-weight: 600;
@@ -176,6 +175,10 @@ table {
     padding: 0 80px;
   }
 }
+:root {
+  background-color: #050623;
+}
+
 body {
   font-size: 1.6rem;
   background-color: #050623;
@@ -196,20 +199,31 @@ body {
 .what-i-do__cards {
   padding-top: 3em;
   display: grid;
-  grid-template-rows: 500px;
+  gap: 5em;
 }
 .what-i-do__card {
   display: grid;
-  grid-template-rows: 250px;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
 }
 .what-i-do__card-text {
   padding: 0.5em 0 2em;
 }
+.what-i-do__card-mockup {
+  padding-bottom: 75%;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+}
 .what-i-do__card-mockup-one {
-  background-image: url();
+  background-image: url("../img/mockup-iPlus.png");
 }
 .what-i-do__card-mockup-two {
-  background-image: url();
+  background-image: url("../img/mockup-Healthcare.png");
+}
+
+.footer {
+  padding: 0 40px;
 }
 
 @media (min-width: 576px) {
@@ -233,5 +247,12 @@ body {
 @media (min-width: 992px) {
   .what-i-do__cards {
     padding-top: 4em;
+    gap: 6.5em;
+  }
+  .what-i-do__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .what-i-do__card-content-every-other {
+    grid-row: 1/3;
   }
 }/*# sourceMappingURL=style.css.map */

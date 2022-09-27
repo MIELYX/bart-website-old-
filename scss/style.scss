@@ -1,5 +1,8 @@
 @use './utilities/' as *;
 
+:root {
+	background-color: $background;
+}
 body {
 	font-size: 1.6rem;
 	background-color: $background;
@@ -22,23 +25,32 @@ body {
 	&__cards {
 		padding-top: 3em;
 		display: grid;
-		grid-template-rows: 500px;
+		gap: 5em;
 	}
 	&__card {
 		display: grid;
-		grid-template-rows: 250px;
+		grid-template-columns: 1fr;
+		gap: 1.5em;
 		&-text {
 			padding: 0.5em 0 2em;
 		}
-		&-mockup{
+		&-mockup {
+			padding-bottom: 75%;
+			border-radius: 16px;
+			background-size: cover;
+			background-position: center;
 			&-one {
-				background-image: url();
+				background-image: url('../img/mockup-iPlus.png');
 			}
-			&-two{
-				background-image: url();
+			&-two {
+				background-image: url('../img/mockup-Healthcare.png');
 			}
 		}
 	}
+}
+
+.footer {
+	padding: 0 40px;
 }
 
 @media (min-width: 576px) {
@@ -65,6 +77,13 @@ body {
 	.what-i-do {
 		&__cards {
 			padding-top: 4em;
+			gap: 6.5em;
+		}
+		&__card {
+			grid-template-columns: repeat(2, 1fr);
+			&-content-every-other {
+				grid-row: 1/3;
+			}
 		}
 	}
 }
