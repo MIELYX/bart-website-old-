@@ -1,6 +1,6 @@
 @use './colors' as *;
 .heading {
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	color: $heading;
 	&-first {
@@ -27,10 +27,9 @@
 }
 .text,
 .btn {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
 }
-
 .text {
 	font-weight: 400;
 	color: $text;
@@ -54,6 +53,12 @@
 		font-size: 12px;
 		line-height: 150%;
 		color: $text-muted;
+		text-align: center;
+	}
+	&-navitem {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 150%;
 	}
 }
 

@@ -1,1 +1,70 @@
 @use './utilities/' as *;
+
+body {
+	font-size: 1.6rem;
+	background-color: $background;
+}
+
+.nav {
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5em 0;
+	}
+	&__sections {
+		display: none;
+	}
+}
+
+.what-i-do {
+	&__cards {
+		padding-top: 3em;
+		display: grid;
+		grid-template-rows: 500px;
+	}
+	&__card {
+		display: grid;
+		grid-template-rows: 250px;
+		&-text {
+			padding: 0.5em 0 2em;
+		}
+		&-mockup{
+			&-one {
+				background-image: url();
+			}
+			&-two{
+				background-image: url();
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.nav {
+		&__hamburger {
+			display: none;
+		}
+		&__sections {
+			display: grid;
+			grid-template-columns: repeat(3, max-content);
+			align-items: center;
+			gap: 8px;
+			.btn {
+				margin-left: 1.5em;
+			}
+			a:not(.btn) {
+				padding: 1em;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.what-i-do {
+		&__cards {
+			padding-top: 4em;
+		}
+	}
+}

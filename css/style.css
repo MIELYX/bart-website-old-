@@ -44,7 +44,7 @@ table {
 }
 
 .heading {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   color: #ffffff;
 }
@@ -71,7 +71,7 @@ table {
 
 .text,
 .btn {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
@@ -99,6 +99,12 @@ table {
   font-size: 12px;
   line-height: 150%;
   color: #828391;
+  text-align: center;
+}
+.text-navitem {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .btn {
@@ -133,7 +139,7 @@ table {
   margin: 0 auto;
   padding: 0 40px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1260px;
 }
 
 .btn {
@@ -141,13 +147,91 @@ table {
   border-radius: 12px;
   background-color: #f2f2f2;
   color: #050623;
+  transition: background-color 0.3s, color 0.3s;
 }
 .btn:hover {
   background-color: #050623;
   color: #f2f2f2;
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  border: none;
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.hamburger__line {
+  border-radius: 2px;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 80px;
+  }
+}
 body {
-  font-size: 1rem;
+  font-size: 1.6rem;
   background-color: #050623;
+}
+
+.nav__box {
+  display: grid;
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+.nav__sections {
+  display: none;
+}
+
+.what-i-do__cards {
+  padding-top: 3em;
+  display: grid;
+  grid-template-rows: 500px;
+}
+.what-i-do__card {
+  display: grid;
+  grid-template-rows: 250px;
+}
+.what-i-do__card-text {
+  padding: 0.5em 0 2em;
+}
+.what-i-do__card-mockup-one {
+  background-image: url();
+}
+.what-i-do__card-mockup-two {
+  background-image: url();
+}
+
+@media (min-width: 576px) {
+  .nav__hamburger {
+    display: none;
+  }
+  .nav__sections {
+    display: grid;
+    grid-template-columns: repeat(3, -webkit-max-content);
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    gap: 8px;
+  }
+  .nav__sections .btn {
+    margin-left: 1.5em;
+  }
+  .nav__sections a:not(.btn) {
+    padding: 1em;
+  }
+}
+@media (min-width: 992px) {
+  .what-i-do__cards {
+    padding-top: 4em;
+  }
 }/*# sourceMappingURL=style.css.map */
