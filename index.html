@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bart portfolio</title>
+    <title>Bart Kuchcinski | Product Designer</title>
+    <link rel="icon" type="image/svg" href="./img/icon/favicon.svg">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;900&display=swap"
         rel="stylesheet">
+    <script src="./js/script.js" defer></script>
 </head>
 <nav class="nav">
     <div class="container">
@@ -23,11 +25,16 @@
                 <div class="hamburger__line hamburger__line--bottom"></div>
             </button>
             <div class="nav__sections">
-                <a class="text text-navitem" href="#know-me-better">About me</a∂>
-                    <a class="text text-navitem" href="#what-i-do">Works</a>
-                    <a class="btn" href="#lets-be-in-touch">Contact</a>
+                <a class="text text-navitem" href="#what-i-do" title="link to works section">Works</a>
+                <a class="text text-navitem" href="#know-me-better" title="link to Know me better section">About me</a∂>
+                    <a class="btn" href="#lets-be-in-touch" title="link to let's be in touch">Contact</a>
             </div>
         </div>
+    </div>
+    <div class="nav__slide-out">
+        <a class="text text-navitem item" href="#what-i-do" title="link to works section">Works</a>
+        <a class="text text-navitem item" href="#know-me-better" title="link to Know me better section">About me</a∂>
+            <a class="btn btn-item item" href="#lets-be-in-touch" title="link to let's be in touch">Contact</a>
     </div>
 </nav>
 <header>
@@ -61,10 +68,10 @@
                             <h3 class="heading heading-third">iPlus App</h3>
                             <p class="text text-second  what-i-do__card-text">A whole story showing the process of
                                 thinking about and creating a new version of the iPlus app - a complete redesign.</p>
-                            <button class="btn">Check the process</button>
+                            <button class="btn btn-hover">Check the process</button>
                         </div>
                     </div>
-                    <div class="what-i-do__card what-i-do__card">
+                    <div class="what-i-do__card">
                         <div class="what-i-do__card-mockup what-i-do__card-mockup-two">
                         </div>
                         <div class="what-i-do__card-content what-i-do__card-content-every-other">
@@ -72,10 +79,20 @@
                             <p class="text text-second  what-i-do__card-text">An application created for the medical
                                 service to improve their work. An interesting task that taught me a lot and I would like
                                 to introduce it to you.</p>
-                            <button class="btn">Check the process</button>
+                            <button class="btn btn-disabled">Coming soon</button>
+                        </div>
+                    </div>
+                    <div class="what-i-do__card">
+                        <div class="what-i-do__card-mockup what-i-do__card-mockup-three"></div>
+                        <div class="what-i-do__card-content">
+                            <h3 class="heading heading-third">Traveloo</h3>
+                            <p class="text text-second  what-i-do__card-text">Two products for people looking for
+                                beautiful homes in unusual corners of the world - Dashboard and Landing Page.</p>
+                            <button class="btn btn-disabled">Coming soon</button>
                         </div>
                     </div>
                 </div>
+                <div class="brighter"></div>
             </div>
         </div>
     </section>
@@ -121,7 +138,7 @@
             <div class="lets-be-in-touch__content">
                 <h2 class="heading heading-second">let's be in touch</h2>
                 <div class="lets-be-in-touch__cards">
-                    <a class="lets-be-in-touch__card" href="#">
+                    <a class="lets-be-in-touch__card" href="#" title="link to Bart's LinkedIn">
                         <div class="lets-be-in-touch__card-content">
                             <div class="lets-be-in-touch__card-textbox">
                                 <h4 class="heading heading-fourth lets-be-in-touch__card-title"><img
@@ -131,7 +148,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="lets-be-in-touch__card" href="#">
+                    <a class="lets-be-in-touch__card" href="#" title="link to Bart's Dribbble">
                         <div class="lets-be-in-touch__card-content">
                             <div class="lets-be-in-touch__card-textbox">
                                 <h4 class="heading heading-fourth lets-be-in-touch__card-title"><img
@@ -141,7 +158,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="lets-be-in-touch__card" href="#">
+                    <a class="lets-be-in-touch__card" href="#" title="link to Bart's E-mail">
                         <div class="lets-be-in-touch__card-content">
                             <div class="lets-be-in-touch__card-textbox">
                                 <h4 class="heading heading-fourth lets-be-in-touch__card-title"><img
@@ -151,6 +168,7 @@
                         </div>
                     </a>
                 </div>
+                <div class="brighter"></div>
             </div>
         </div>
     </section>

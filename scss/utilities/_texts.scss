@@ -4,6 +4,8 @@
 	font-style: normal;
 	color: $heading;
 	&-first {
+		margin: 0 auto;
+		max-width: 1000px;
 		font-weight: 900;
 		font-size: 36px;
 		line-height: 49px;
@@ -27,6 +29,7 @@
 		color: $orange;
 	}
 }
+
 .text,
 .btn {
 	font-family: 'Inter', sans-serif;
@@ -57,8 +60,9 @@
 		line-height: 150%;
 		color: $text-muted;
 	}
-	&-fifth{
+	&-fifth {
 		margin: 0 auto;
+		max-width: 220px;
 		text-align: center;
 	}
 	&-navitem {
@@ -98,7 +102,7 @@
 		&-fifth {
 			font-size: 18px;
 		}
-		&-fifth{
+		&-fifth {
 			max-width: 340px;
 		}
 	}
@@ -117,8 +121,8 @@
 	}
 	.text {
 		&-fifth {
-			font-size: 20px;
-			max-width: 500px;
+			max-width: 470px;
 		}
 	}
 }
+

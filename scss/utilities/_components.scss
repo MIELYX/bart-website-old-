@@ -1,4 +1,13 @@
 @use './colors' as *;
+.item{
+	font-size: 22px;
+	padding: 1em;
+}
+
+.btn-item{
+	margin-top: 2em;
+}
+
 
 .container {
 	margin: 0 auto;
@@ -20,9 +29,13 @@
 	background-color: $btn;
 	color: $btn-text;
 	transition: background-color 0.3s, color 0.3s;
-	&:hover {
+	&-hover:hover {
 		background-color: $btn-hover;
 		color: $btn-text-hover;
+	}
+	&-disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
 	}
 }
 

@@ -50,6 +50,8 @@ table {
   color: #ffffff;
 }
 .heading-first {
+  margin: 0 auto;
+  max-width: 1000px;
   font-weight: 900;
   font-size: 36px;
   line-height: 49px;
@@ -80,7 +82,7 @@ table {
 
 .text {
   font-weight: 400;
-  color: #fff;
+  color: #f2f2f2;
 }
 .text-first {
   font-size: 20px;
@@ -105,6 +107,7 @@ table {
 }
 .text-fifth {
   margin: 0 auto;
+  max-width: 220px;
   text-align: center;
 }
 .text-navitem {
@@ -153,10 +156,18 @@ table {
     line-height: 100px;
   }
   .text-fifth {
-    font-size: 20px;
-    max-width: 500px;
+    max-width: 470px;
   }
 }
+.item {
+  font-size: 22px;
+  padding: 1em;
+}
+
+.btn-item {
+  margin-top: 2em;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 40px;
@@ -178,9 +189,13 @@ table {
   color: #050623;
   transition: background-color 0.3s, color 0.3s;
 }
-.btn:hover {
+.btn-hover:hover {
   background-color: #050623;
   color: #f2f2f2;
+}
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .hamburger {
@@ -276,9 +291,16 @@ body {
 .nav,
 .what-i-do {
   position: relative;
+  z-index: 2;
+}
+
+.what-i-do {
   z-index: 1;
 }
 
+.nav {
+  position: relative;
+}
 .nav__box {
   display: grid;
   grid-template-columns: repeat(2, -webkit-max-content);
@@ -290,6 +312,36 @@ body {
 .nav__sections {
   display: none;
 }
+.nav__hamburger {
+  position: relative;
+  z-index: 4;
+}
+.nav__slide-out {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #050623;
+  z-index: 3;
+  opacity: 0;
+  transform: translateX(105%);
+  transition: transform 1s, opacity 1s;
+}
+
+.slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sticky {
+  overflow: hidden;
+}
 
 .hero {
   padding-top: 2em;
@@ -297,14 +349,8 @@ body {
 .hero__title {
   padding-bottom: 16px;
 }
-.hero__arrow {
+.hero__arrow, .hero__arrow-figma {
   display: none;
-}
-.hero__arrow-figma {
-  position: absolute;
-  top: 30px;
-  right: -320px;
-  transform: translate(-50%, -50%);
 }
 .hero__textbox {
   position: relative;
@@ -317,6 +363,7 @@ body {
 }
 .hero__figma-arrow {
   position: relative;
+  text-align: center;
 }
 .hero__wobble {
   display: block;
@@ -329,10 +376,20 @@ body {
 .hero__wobble-text {
   text-align: center;
   padding-bottom: 10px;
+  color: #ffffff;
 }
 
 .what-i-do {
   margin-top: 6em;
+}
+.what-i-do__content {
+  position: relative;
+}
+.what-i-do__content .brighter {
+  position: absolute;
+  left: -90px;
+  bottom: -300px;
+  z-index: 0;
 }
 .what-i-do__cards {
   padding-top: 3em;
@@ -342,10 +399,10 @@ body {
 .what-i-do__card {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5em;
+  gap: 2em;
 }
 .what-i-do__card-text {
-  padding: 0.5em 0 2em;
+  padding: 1em 0 2em;
 }
 .what-i-do__card-mockup {
   padding-bottom: 75%;
@@ -358,6 +415,9 @@ body {
 }
 .what-i-do__card-mockup-two {
   background-image: url("../img/mockup-Healthcare.png");
+}
+.what-i-do__card-mockup-three {
+  background-image: url("../img/mockup-Traveloo.png");
 }
 
 .know-me-better {
@@ -385,6 +445,7 @@ body {
   position: relative;
 }
 .know-me-better__img {
+  padding-top: 3em;
   width: 100%;
 }
 .know-me-better__item {
@@ -394,11 +455,22 @@ body {
 .lets-be-in-touch {
   padding-top: 12.5em;
 }
+.lets-be-in-touch__content {
+  position: relative;
+}
+.lets-be-in-touch__content .brighter {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  z-index: 0;
+}
 .lets-be-in-touch__cards {
+  position: relative;
   padding-top: 3em;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 1.5em;
+  z-index: 1;
 }
 .lets-be-in-touch__card {
   position: relative;
@@ -448,7 +520,10 @@ body {
 }
 
 @media (min-width: 576px) {
-  .nav__hamburger {
+  body {
+    overflow: visible !important;
+  }
+  .nav__hamburger, .nav__slide-out {
     display: none;
   }
   .nav__sections {
@@ -478,20 +553,30 @@ body {
   }
   .know-me-better__img {
     padding: 0 50px;
+    padding-top: 3em;
   }
   .lets-be-in-touch {
     padding-top: 15.5em;
   }
 }
+@media (min-width: 768px) {
+  .hero__arrow-figma {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: -350px;
+    transform: translate(-50%, -50%);
+  }
+}
 @media (min-width: 992px) {
   .hero {
-    padding-top: 5.5em;
+    padding-top: 5em;
   }
   .hero__wobble {
     padding-top: 7.5em;
   }
   .what-i-do {
-    margin-top: 8.5em;
+    margin-top: 9em;
   }
   .what-i-do__cards {
     padding-top: 4em;
@@ -499,18 +584,20 @@ body {
   }
   .what-i-do__card {
     grid-template-columns: repeat(2, 1fr);
+    gap: 4.625em;
   }
   .what-i-do__card-content-every-other {
     grid-row: 1/3;
   }
   .know-me-better {
-    margin-top: 10.5em;
+    margin-top: 13.75em;
   }
   .know-me-better__img {
     padding: 0 50px;
+    padding-top: 3em;
   }
   .lets-be-in-touch {
-    padding-top: 11em;
+    padding-top: 12.25em;
   }
   .footer {
     padding: 12em 0 3em;
