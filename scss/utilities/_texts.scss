@@ -5,15 +5,17 @@
 	color: $heading;
 	&-first {
 		font-weight: 900;
-		font-size: 80px;
-		line-height: 100px;
+		font-size: 36px;
+		line-height: 49px;
 		letter-spacing: -0.02em;
 		text-transform: uppercase;
+		text-align: center;
 	}
 	&-second {
 		font-weight: 800;
 		font-size: 28px;
 		line-height: 136.02%;
+		text-transform: uppercase;
 	}
 	&-third,
 	&-fourth {
@@ -43,7 +45,8 @@
 		line-height: 162.02%;
 		font-feature-settings: 'salt' on;
 	}
-	&-third {
+	&-third,
+	&-fifth {
 		font-size: 14px;
 		line-height: 164.43%;
 		font-feature-settings: 'salt' on;
@@ -54,10 +57,17 @@
 		line-height: 150%;
 		color: $text-muted;
 	}
+	&-fifth{
+		margin: 0 auto;
+		text-align: center;
+	}
 	&-navitem {
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 150%;
+	}
+	&-700 {
+		font-weight: 700;
 	}
 }
 
@@ -70,8 +80,8 @@
 @media (min-width: 576px) {
 	.heading {
 		&-first {
-			font-size: 80px;
-			line-height: 100px;
+			font-size: 72px;
+			line-height: 92px;
 		}
 		&-second {
 			font-weight: 900;
@@ -84,12 +94,31 @@
 		}
 	}
 	.text {
-		&-third {
+		&-third,
+		&-fifth {
 			font-size: 18px;
+		}
+		&-fifth{
+			max-width: 340px;
 		}
 	}
 	.btn {
 		font-size: 16px;
 		line-height: 150%;
+	}
+}
+
+@media (min-width: 992px) {
+	.heading {
+		&-first {
+			font-size: 80px;
+			line-height: 100px;
+		}
+	}
+	.text {
+		&-fifth {
+			font-size: 20px;
+			max-width: 500px;
+		}
 	}
 }
