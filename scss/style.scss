@@ -2,6 +2,8 @@
 
 :root {
 	background-color: $background;
+	scroll-behavior: smooth;
+	scroll-padding: 10em;
 }
 body {
 	font-size: 1.6rem;
@@ -32,6 +34,12 @@ body {
 	}
 	&__arrow {
 		display: none;
+		&-figma{
+			position: absolute;
+			top:30px;
+			right: -320px;
+			transform: translate(-50%, -50%);
+		}
 	}
 	&__textbox {
 		position: relative;
@@ -42,9 +50,13 @@ body {
 			transform: translate(-50%, -50%);
 		}
 	}
+	&__figma-arrow{
+		position: relative;
+	}
 	&__wobble {
+		display: block;
 		margin: 0 auto;
-		padding: 8em 0 9.5em;
+		padding-top: 3em;
 		width: max-content;
 		&-text {
 			text-align: center;
@@ -53,6 +65,7 @@ body {
 	}
 }
 .what-i-do {
+	margin-top: 6em;
 	&__cards {
 		padding-top: 3em;
 		display: grid;
@@ -80,11 +93,11 @@ body {
 	}
 }
 .know-me-better {
+	margin-top: 10em;
 	&__content {
 		display: grid;
 		grid-template-rows: repeat(2, auto);
 		align-items: center;
-		gap: 3em;
 	}
 	&__description {
 		&-textbox {
@@ -101,12 +114,19 @@ body {
 			gap: 0.75em;
 		}
 	}
+	&__imgbox{
+		position: relative;
+	}
 	&__img {
 		width: 100%;
+	}
+	&__item {
+		display: none;
 	}
 }
 
 .lets-be-in-touch {
+	padding-top: 12.5em;
 	&__cards {
 		padding-top: 3em;
 		display: grid;
@@ -119,6 +139,10 @@ body {
 		display: block;
 		padding: 50px 0;
 		background-image: $border;
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(0.9);
+		}
 		&-content {
 			position: absolute;
 			top: 1px;
@@ -136,6 +160,7 @@ body {
 		}
 		&-title {
 			position: relative;
+			font-weight: 600;
 		}
 		&-icon {
 			position: absolute;
@@ -147,7 +172,7 @@ body {
 }
 
 .footer {
-	padding: 2.5em 0;
+	padding: 11em 0 2.5em;
 	&__content {
 		text-align: center;
 	}
@@ -176,19 +201,33 @@ body {
 	}
 	.hero {
 		padding-top: 3em;
+		&__wobble {
+			padding-top: 4em;
+		}
+	}
+	.what-i-do {
+		margin-top: 7.5em;
 	}
 	.know-me-better {
+		margin-top: 12.5em;
 		&__img {
 			padding: 0 50px;
 		}
+	}
+	.lets-be-in-touch {
+		padding-top: 15.5em;
 	}
 }
 
 @media (min-width: 992px) {
 	.hero {
-		padding-top: 6em;
+		padding-top: 5.5em;
+		&__wobble {
+			padding-top: 7.5em;
+		}
 	}
 	.what-i-do {
+		margin-top: 8.5em;
 		&__cards {
 			padding-top: 4em;
 			gap: 6.5em;
@@ -200,8 +239,17 @@ body {
 			}
 		}
 	}
+	.know-me-better {
+		margin-top: 10.5em;
+		&__img {
+			padding: 0 50px;
+		}
+	}
+	.lets-be-in-touch {
+		padding-top: 11em;
+	}
 	.footer {
-		padding: 3em 0;
+		padding: 12em 0 3em;
 		&__content {
 			display: flex;
 			justify-content: space-between;
@@ -218,19 +266,38 @@ body {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: 1fr;
-			gap: 2em;
+			gap: 5.125em;
 		}
 		&__description {
 			&-textbox {
 				padding: 1em 0 1.5em;
 			}
 			&-iconbox {
+				position: relative;
 				display: flex;
 				gap: 2em;
 			}
 		}
 		&__img {
 			padding: 0;
+		}
+		&__item {
+			display: block;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			&--1 {
+				top: -5%;
+				left: 75%;
+			}
+			&--2 {
+				top: 50%;
+				right: -20%;
+			}
+			&--3{
+				top: 5%;
+				left: 0;
+			}
 		}
 	}
 }
