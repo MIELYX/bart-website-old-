@@ -6,9 +6,15 @@
 	scroll-padding: 10em;
 }
 body {
+	position: relative;
 	font-size: 1.6rem;
 	background-color: $background;
 }
+
+.section{
+	overflow: hidden;
+}
+
 .nav,
 .what-i-do {
 	position: relative;
@@ -19,7 +25,10 @@ body {
 }
 
 .nav {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	&__box {
 		display: grid;
 		grid-template-columns: repeat(2, max-content);
@@ -60,7 +69,9 @@ body {
 	overflow: hidden;
 }
 .hero {
-	padding-top: 2em;
+	padding-top: calc(2em + 104px);
+	padding-bottom: 6em;
+	overflow: hidden;
 	&__title {
 		padding-bottom: 16px;
 	}
@@ -94,7 +105,6 @@ body {
 	}
 }
 .what-i-do {
-	margin-top: 6em;
 	&__content {
 		position: relative;
 		.brighter {
@@ -260,16 +270,14 @@ body {
 		}
 	}
 	.hero {
-		padding-top: 3em;
+		padding-top: calc(3em + 104px);
+		padding-bottom: 7.5em;
 		&__wobble {
 			padding-top: 4em;
 		}
 	}
-	.what-i-do {
-		margin-top: 7.5em;
-	}
 	.know-me-better {
-		margin-top: 12.5em
+		margin-top: 12.5em;
 	}
 	.lets-be-in-touch {
 		padding-top: 15.5em;
@@ -290,13 +298,13 @@ body {
 }
 @media (min-width: 992px) {
 	.hero {
-		padding-top: 5em;
+		padding-top: calc(5em + 104px);
+		padding-bottom: 9em;
 		&__wobble {
 			padding-top: 7.5em;
 		}
 	}
 	.what-i-do {
-		margin-top: 9em;
 		&__cards {
 			padding-top: 4em;
 			gap: 6.5em;

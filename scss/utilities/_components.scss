@@ -1,13 +1,4 @@
 @use './colors' as *;
-.item{
-	font-size: 22px;
-	padding: 1em;
-}
-
-.btn-item{
-	margin-top: 2em;
-}
-
 
 .container {
 	margin: 0 auto;
@@ -33,7 +24,7 @@
 		background-color: $btn-hover;
 		color: $btn-text-hover;
 	}
-	&-disabled {
+	&-disabled{
 		opacity: 0.5;
 		cursor: not-allowed;
 	}
