@@ -1,4 +1,11 @@
 @use './colors' as *;
+
+.btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 100%;
+}
+
 .heading {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
@@ -69,16 +76,13 @@
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 150%;
+		&-slide{
+			font-size: 24px;
+		}
 	}
 	&-700 {
 		font-weight: 700;
 	}
-}
-
-.btn {
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 100%;
 }
 
 @media (min-width: 576px) {

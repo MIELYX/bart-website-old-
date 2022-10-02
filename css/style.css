@@ -44,121 +44,6 @@ table {
   border-spacing: 0;
 }
 
-.heading {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  color: #ffffff;
-}
-.heading-first {
-  margin: 0 auto;
-  max-width: 1000px;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 49px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  text-align: center;
-}
-.heading-second {
-  font-weight: 800;
-  font-size: 28px;
-  line-height: 136.02%;
-  text-transform: uppercase;
-}
-.heading-third, .heading-fourth {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 136.52%;
-}
-.heading-orange {
-  color: #e5af4a;
-}
-
-.text,
-.btn {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-}
-
-.text {
-  font-weight: 400;
-  color: #f2f2f2;
-}
-.text-first {
-  font-size: 20px;
-  line-height: 136.02%;
-  color: #828391;
-}
-.text-second {
-  font-size: 16px;
-  line-height: 162.02%;
-  font-feature-settings: "salt" on;
-}
-.text-third, .text-fifth {
-  font-size: 14px;
-  line-height: 164.43%;
-  font-feature-settings: "salt" on;
-}
-.text-fourth {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 150%;
-  color: #828391;
-}
-.text-fifth {
-  margin: 0 auto;
-  max-width: 220px;
-  text-align: center;
-}
-.text-navitem {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-}
-.text-700 {
-  font-weight: 700;
-}
-
-.btn {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 100%;
-}
-
-@media (min-width: 576px) {
-  .heading-first {
-    font-size: 72px;
-    line-height: 92px;
-  }
-  .heading-second {
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 150%;
-  }
-  .heading-third {
-    font-weight: 800;
-    font-size: 36px;
-  }
-  .text-third, .text-fifth {
-    font-size: 18px;
-  }
-  .text-fifth {
-    max-width: 340px;
-  }
-  .btn {
-    font-size: 16px;
-    line-height: 150%;
-  }
-}
-@media (min-width: 992px) {
-  .heading-first {
-    font-size: 80px;
-    line-height: 100px;
-  }
-  .text-fifth {
-    max-width: 470px;
-  }
-}
 .container {
   margin: 0 auto;
   padding: 0 40px;
@@ -268,6 +153,124 @@ table {
     transform: translateX(90%);
   }
 }
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+}
+.heading-first {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.heading-second {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 136.02%;
+  text-transform: uppercase;
+}
+.heading-third, .heading-fourth {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.52%;
+}
+.heading-orange {
+  color: #e5af4a;
+}
+
+.text,
+.btn {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.text {
+  font-weight: 400;
+  color: #f2f2f2;
+}
+.text-first {
+  font-size: 20px;
+  line-height: 136.02%;
+  color: #828391;
+}
+.text-second {
+  font-size: 16px;
+  line-height: 162.02%;
+  font-feature-settings: "salt" on;
+}
+.text-third, .text-fifth {
+  font-size: 14px;
+  line-height: 164.43%;
+  font-feature-settings: "salt" on;
+}
+.text-fourth {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  color: #828391;
+}
+.text-fifth {
+  margin: 0 auto;
+  max-width: 220px;
+  text-align: center;
+}
+.text-navitem {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.text-navitem-slide {
+  font-size: 24px;
+}
+.text-700 {
+  font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  .heading-first {
+    font-size: 72px;
+    line-height: 92px;
+  }
+  .heading-second {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 150%;
+  }
+  .heading-third {
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .text-third, .text-fifth {
+    font-size: 18px;
+  }
+  .text-fifth {
+    max-width: 340px;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+@media (min-width: 992px) {
+  .heading-first {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .text-fifth {
+    max-width: 470px;
+  }
+}
 :root {
   background-color: #050623;
   scroll-behavior: smooth;
@@ -321,7 +324,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 3em;
   top: 0;
   left: 0;
   width: 100vw;
@@ -331,6 +334,9 @@ body {
   opacity: 0;
   transform: translateX(105%);
   transition: transform 1s, opacity 1s;
+}
+.nav__slide-out-btn {
+  margin-top: 0.5em;
 }
 
 .slide {
