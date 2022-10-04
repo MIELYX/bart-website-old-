@@ -76,6 +76,7 @@ body {
 	&__item {
 		padding: 0.75em 1.5em;
 		border-radius: 8px;
+		font-family: 'Inter';
 		color: $background;
 		background-color: $main;
 	}
@@ -109,7 +110,7 @@ body {
 		&-img {
 			display: none;
 		}
-		&-title{
+		&-title {
 			padding-bottom: 8px;
 		}
 	}
