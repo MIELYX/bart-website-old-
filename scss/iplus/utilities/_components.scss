@@ -1,0 +1,43 @@
+@use './colors' as *;
+
+.container {
+	margin: 0 auto;
+	padding: 0 40px;
+	width: 100%;
+	max-width: 1360px;
+}
+
+.btn {
+	padding: 16px 32px;
+	border-radius: 12px;
+	background-color: $btn;
+	color: $btn-text;
+	transition: background-color 0.3s, color 0.3s;
+	&:hover {
+		background-color: $btn-hover;
+		color: $btn-text-hover;
+	}
+}
+
+.hamburger {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-evenly;
+	border: none;
+	height: 32px;
+	width: 32px;
+	background-color: transparent;
+	cursor: pointer;
+	&__line {
+		border-radius: 2px;
+		height: 2px;
+		width: 100%;
+		background-color: $hamburger;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 80px;
+	}
+}

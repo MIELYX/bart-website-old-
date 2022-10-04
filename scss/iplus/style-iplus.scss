@@ -1,0 +1,194 @@
+@use './utilities/' as *;
+
+:root {
+	scroll-behavior: smooth;
+	scroll-padding: 10em;
+	background-color: $background;
+}
+body {
+	position: relative;
+	font-size: 1.6rem;
+	background-color: $background;
+}
+
+.section {
+	overflow: hidden;
+}
+
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $background;
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5em 0;
+	}
+	&__sections {
+		display: none;
+	}
+	&__hamburger {
+		position: relative;
+		z-index: 4;
+	}
+	&__slide-out {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3em;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: $background;
+		z-index: 3;
+		opacity: 0;
+		transform: translateX(105%);
+		transition: transform 1s, opacity 1s;
+		&-btn {
+			margin-top: 0.5em;
+		}
+	}
+}
+.slide {
+	transform: translateX(0);
+	opacity: 1;
+}
+.sticky {
+	overflow: hidden;
+}
+
+.hero {
+	&__img {
+		width: 100%;
+	}
+}
+
+.iplus-app {
+	padding-top: 1.75em;
+	overflow: hidden;
+	&__item {
+		padding: 0.75em 1.5em;
+		border-radius: 8px;
+		color: $background;
+		background-color: $main;
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+		padding-top: 2em;
+	}
+	&__answers {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 12em;
+		row-gap: 2em;
+		padding-top: 4em;
+	}
+	&__answer {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		&-subelement {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+		}
+	}
+	&__info {
+		position: relative;
+		margin-top: 11.5em;
+		margin-bottom: 7.5em;
+		&-img {
+			display: none;
+		}
+		&-title{
+			padding-bottom: 8px;
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: center;
+	}
+	&__info {
+		margin: 5.25em 0;
+	}
+}
+
+.footer {
+	padding: 11em 0 2.5em;
+	&__content {
+		text-align: center;
+	}
+	&__text {
+		padding-bottom: 0.35em;
+	}
+}
+
+@media (min-width: 576px) {
+	body {
+		overflow: visible !important;
+	}
+	.nav {
+		&__hamburger,
+		&__slide-out {
+			display: none;
+		}
+		&__sections {
+			display: grid;
+			grid-template-columns: repeat(3, max-content);
+			align-items: center;
+			gap: 8px;
+			.btn {
+				margin-left: 1.5em;
+			}
+			a:not(.btn) {
+				padding: 1em;
+			}
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.iplus-app {
+		&__info {
+			margin-top: 11.5em;
+			margin-bottom: 7.5em;
+			margin-right: 450px;
+			max-width: 635px;
+			&-img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: -700px;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.iplus-app {
+		padding-top: 2em;
+		&__answers {
+			padding-top: 5.25em;
+		}
+	}
+	.footer {
+		padding: 12em 0 3em;
+		&__content {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__text {
+			padding-bottom: 0;
+		}
+	}
+}
