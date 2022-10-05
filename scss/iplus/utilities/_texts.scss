@@ -51,6 +51,20 @@
 		font-size: 18px;
 		line-height: 30px;
 		color: $text-body;
+		&-white{
+			color: $text;
+		}
+	}
+	&-eighth{
+		font-size: 12px;
+		line-height: 20px;
+		color: #cecece;
+	}
+	&-nineth {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 150%;
+		color: $text-muted;
 	}
 	&-navitem {
 		font-weight: 600;
@@ -60,6 +74,7 @@
 			font-size: 24px;
 		}
 	}
+	
 }
 
 @media (min-width: 576px) {
