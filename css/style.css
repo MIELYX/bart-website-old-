@@ -51,17 +51,10 @@ table {
   max-width: 1360px;
 }
 
-.brighter {
-  width: 500px;
-  height: 500px;
-  background: rgba(104, 31, 224, 0.15);
-  filter: blur(250px);
-}
-
 .btn {
   padding: 16px 32px;
   border-radius: 12px;
-  background-color: #f2f2f2;
+  background-color: #fff;
   color: #050623;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -95,8 +88,13 @@ table {
   .container {
     padding: 0 80px;
   }
+  .brighter {
+    width: 500px;
+    height: 500px;
+    background: rgba(104, 31, 224, 0.15);
+    filter: blur(250px);
+  }
 }
-/* Wooble */
 .line-wobble {
   --uib-size: 208px;
   --uib-speed: 3s;
@@ -229,6 +227,7 @@ table {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
+  color: #ffffff;
 }
 .text-navitem-slide {
   font-size: 24px;
@@ -414,13 +413,13 @@ body {
   background-position: center;
 }
 .what-i-do__card-mockup-one {
-  background-image: url("../img/mockup-iPlus.png");
+  background-image: url("../img/iPlus.png");
 }
 .what-i-do__card-mockup-two {
-  background-image: url("../img/mockup-Healthcare.png");
+  background-image: url("../img/Healthcare.png");
 }
 .what-i-do__card-mockup-three {
-  background-image: url("../img/mockup-Traveloo.png");
+  background-image: url("../img/Traveloo.png");
 }
 
 .know-me-better {

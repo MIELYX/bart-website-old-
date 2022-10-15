@@ -54,6 +54,7 @@ table {
 .btn {
   font-family: Inter, "sans-serif";
   font-weight: 600;
+  line-height: 150%;
   padding: 16px 32px;
   border-radius: 12px;
   background-color: #f2f2f2;
@@ -88,7 +89,7 @@ table {
   }
 }
 .heading {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
   color: #fff;
@@ -108,7 +109,7 @@ table {
 }
 
 .text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #fff;
@@ -160,6 +161,15 @@ table {
 }
 .text-navitem-slide {
   font-size: 24px;
+}
+.text-700 {
+  font-weight: 700;
+}
+.text-grey {
+  color: rgba(255, 255, 255, 0.7);
+}
+.text-muted {
+  color: #828391;
 }
 
 @media (min-width: 576px) {
@@ -247,15 +257,15 @@ body {
 .iplus-app__item {
   padding: 0.75em 1.5em;
   border-radius: 8px;
-  font-family: "Inter";
-  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   color: #050623;
   background-color: #01eb64;
 }
 .iplus-app__items {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 15px;
   padding-top: 2em;
 }
 .iplus-app__answers {
@@ -277,7 +287,6 @@ body {
   gap: 0.5em;
 }
 .iplus-app__info {
-  position: relative;
   margin-top: 11.5em;
   margin-bottom: 7.5em;
 }
@@ -290,6 +299,8 @@ body {
 .iplus-app__bottom {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1.25em;
 }
 .iplus-app__info {
   margin: 5.25em 0;
@@ -321,7 +332,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(120.56deg, rgba(0, 255, 109, 0.4) 0%, rgba(0, 235, 101, 0) 101.79%);
+  background-image: linear-gradient(123.35deg, rgba(0, 255, 109, 0.35) -6.3%, rgba(0, 237, 101, 0.05) 133.78%, rgba(0, 235, 101, 0) 147.74%);
 }
 .market-research .container {
   position: relative;
@@ -330,6 +341,7 @@ body {
 .market-research__text {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 .market-research__subtext-title {
   padding-bottom: 8px;
@@ -351,6 +363,258 @@ body {
 }
 .problem-statement__review-img {
   width: 100%;
+}
+
+.comment {
+  padding-top: 4em;
+}
+.comment__title {
+  padding-bottom: 16px;
+}
+.comment__items {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px;
+}
+.comment__item {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.comment__text {
+  display: grid;
+}
+.comment__autor {
+  padding-top: 16px;
+  align-self: flex-end;
+}
+.comment__avatar {
+  width: 54px;
+}
+
+.usage-problems {
+  display: grid;
+  justify-items: center;
+  gap: 64px;
+  padding-top: 4em;
+}
+.usage-problems__box {
+  display: grid;
+  gap: 24px;
+}
+.usage-problems__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+.usage-problems__img img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.competetive-analysis {
+  padding-top: 3.5em;
+}
+.competetive-analysis__title {
+  padding-bottom: 8px;
+}
+.competetive-analysis__section {
+  padding-top: 4.875em;
+}
+.competetive-analysis__section-top {
+  display: grid;
+  gap: 64px;
+  padding-bottom: 30px;
+}
+.competetive-analysis__section-top-imgbox {
+  position: relative;
+  justify-self: center;
+}
+.competetive-analysis__section-top-img {
+  width: 100%;
+  max-width: 450px;
+}
+.competetive-analysis__section-top-img-one {
+  max-width: 315px;
+}
+.competetive-analysis__section-top-img-two {
+  max-width: 334px;
+}
+.competetive-analysis__section-top-img-source {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+}
+.competetive-analysis__section-top-img-source--one {
+  bottom: -25px;
+  left: 61%;
+}
+.competetive-analysis__section-top-img-source--two {
+  bottom: -31px;
+  left: 0;
+}
+.competetive-analysis__review-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 18px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.competetive-analysis__review-ratings {
+  align-self: flex-end;
+  padding-bottom: 4px;
+}
+.competetive-analysis__review-text {
+  padding-top: 12px;
+}
+.competetive-analysis__reviews {
+  display: grid;
+  gap: 24px;
+}
+.competetive-analysis__reviews-title {
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+.competetive-analysis__text {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  display: grid;
+  gap: 24px;
+}
+.competetive-analysis__subtext-title {
+  padding-bottom: 8px;
+}
+
+.user-survey {
+  position: relative;
+  background-color: #313662;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.user-survey::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(123.35deg, rgba(0, 255, 109, 0.35) -6.3%, rgba(0, 237, 101, 0.05) 133.78%, rgba(0, 235, 101, 0) 147.74%);
+}
+.user-survey__content {
+  position: relative;
+  z-index: 1;
+}
+.user-survey__center {
+  padding-top: 40px;
+}
+.user-survey__center img {
+  max-width: 1030px;
+  width: 100%;
+}
+
+.personas__content__title {
+  padding-bottom: 8px;
+}
+.personas__content-first-img {
+  display: none;
+}
+.personas__content-second__imgbox {
+  padding-top: 40px;
+}
+.personas__content-second img {
+  position: relative;
+  right: 2.5%;
+  width: 105.5%;
+}
+
+.flow-diagram {
+  position: relative;
+  background-color: #313662;
+}
+.flow-diagram::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(123.35deg, rgba(0, 255, 109, 0.35) -6.3%, rgba(0, 237, 101, 0.05) 133.78%, rgba(0, 235, 101, 0) 147.74%);
+}
+.flow-diagram__content {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+.flow-diagram__img {
+  width: 100%;
+}
+.flow-diagram__text {
+  padding-bottom: 38px;
+}
+.flow-diagram__text-title {
+  padding-bottom: 8px;
+}
+
+.wireframes__content {
+  padding: 88px 0;
+}
+.wireframes__img {
+  width: 100%;
+}
+.wireframes__text {
+  padding-bottom: 64px;
+}
+.wireframes__text-title {
+  padding-bottom: 8px;
+}
+
+.uidesign__content {
+  padding-bottom: 88px;
+}
+.uidesign__text {
+  padding-bottom: 48px;
+}
+.uidesign__text-title {
+  padding-bottom: 8px;
+}
+.uidesign__elements {
+  display: grid;
+  gap: 48px;
+}
+.uidesign__colors {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.uidesign__colors--last {
+  padding-top: 32px;
+}
+.uidesign__colors--title {
+  padding-bottom: 12px;
+}
+.uidesign__colors--title2 {
+  padding-bottom: 8px;
+}
+.uidesign__colors--img {
+  width: 100%;
+  max-width: 408px;
+}
+.uidesign__typeface--title {
+  padding-bottom: 8px;
+}
+.uidesign__typeface--abc {
+  padding: 48px 0;
+}
+.uidesign__text2 {
+  display: flex;
+}
+.uidesign__text2--img {
+  display: none;
 }
 
 .footer {
@@ -383,6 +647,50 @@ body {
   .nav__sections a:not(.btn) {
     padding: 1em;
   }
+  .competetive-analysis__reviews {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flow-diagram__content {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .flow-diagram__text {
+    padding-bottom: 58px;
+  }
+  .wireframes__content {
+    padding: 104px 0;
+  }
+  .wireframes__img {
+    width: 100%;
+  }
+  .uidesign__content {
+    padding-bottom: 88px;
+  }
+  .uidesign__text {
+    padding-bottom: 64px;
+  }
+  .uidesign__typeface--title {
+    padding-bottom: 12px;
+  }
+  .uidesign__typeface--abc {
+    padding-bottom: 72px;
+  }
+  .uidesign__typeface--img {
+    max-width: 60px;
+  }
+  .uidesign__mockup {
+    background-image: url("../../img/mockup-two.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 75%;
+  }
+  .uidesign__text2 {
+    display: flex;
+  }
+  .uidesign__text2--img {
+    display: block;
+    width: 450px;
+  }
 }
 @media (min-width: 768px) {
   .problem-statement__reviews {
@@ -393,25 +701,18 @@ body {
   }
 }
 @media (min-width: 900px) {
+  .iplus-app__bottom {
+    margin-top: 3em;
+  }
   .iplus-app__info {
-    margin-top: 11.5em;
-    margin-bottom: 7.5em;
-    margin-right: 450px;
+    margin: 0;
     max-width: 635px;
   }
   .iplus-app__info-img {
+    position: relative;
+    top: 45px;
     display: block;
-    position: absolute;
-    top: 50%;
-    right: -700px;
-    transform: translate(-50%, -50%);
-  }
-}
-@media (min-width: 1100px) {
-  .market-research__content {
-    align-items: stretch;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, auto);
+    height: 450px;
   }
 }
 @media (min-width: 992px) {
@@ -420,6 +721,36 @@ body {
   }
   .iplus-app__answers {
     padding-top: 5.25em;
+  }
+  .competetive-analysis {
+    padding-top: 6.5em;
+  }
+  .competetive-analysis__section {
+    padding-top: 5.5em;
+  }
+  .user-survey {
+    margin-bottom: 100px;
+  }
+  .user-survey__center {
+    padding-top: 72px;
+    padding-bottom: 16px;
+  }
+  .personas__content-first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 80px;
+  }
+  .personas__content-first-text {
+    max-width: 535px;
+  }
+  .personas__content-first-img {
+    display: block;
+    width: 370px;
+  }
+  .personas__content-second__imgbox {
+    padding-top: 64px;
   }
   .footer {
     padding: 12em 0 3em;
@@ -430,5 +761,58 @@ body {
   }
   .footer__text {
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .market-research__image img {
+    width: auto;
+  }
+  .market-research__content {
+    align-items: stretch;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
+  }
+  .comment__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .usage-problems {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .uidesign__elements {
+    grid-template-columns: 590px 300px;
+    gap: 24px;
+  }
+  .uidesign__typeface--img {
+    max-width: none;
+  }
+}
+@media (min-width: 1200px) {
+  .competetive-analysis__section {
+    padding-top: 5.5em;
+  }
+  .competetive-analysis__section-top {
+    grid-template-columns: auto 550px;
+  }
+  .competetive-analysis__section-top-imgbox {
+    position: relative;
+    justify-self: flex-start;
+  }
+  .competetive-analysis__section-top-imgbox--reverse {
+    justify-self: flex-end;
+    grid-column: 2/3;
+  }
+  .competetive-analysis__section-top-img {
+    width: 450px;
+  }
+  .competetive-analysis__section-top-img-one {
+    width: 315px;
+  }
+  .competetive-analysis__section-top-img-two {
+    width: 334px;
+  }
+  .competetive-analysis__section-top-description--reverse {
+    grid-row: 1/2;
   }
 }/*# sourceMappingURL=style-iplus.css.map */

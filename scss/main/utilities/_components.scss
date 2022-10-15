@@ -7,13 +7,6 @@
 	max-width: 1360px;
 }
 
-.brighter {
-	width: 500px;
-	height: 500px;
-	background: rgba(104, 31, 224, 0.15);
-	filter: blur(250px);
-}
-
 .btn {
 	padding: 16px 32px;
 	border-radius: 12px;
@@ -24,7 +17,7 @@
 		background-color: $btn-hover;
 		color: $btn-text-hover;
 	}
-	&-disabled{
+	&-disabled {
 		opacity: 0.5;
 		cursor: not-allowed;
 	}
@@ -51,9 +44,14 @@
 	.container {
 		padding: 0 80px;
 	}
+	.brighter {
+		width: 500px;
+		height: 500px;
+		background: rgba(104, 31, 224, 0.15);
+		filter: blur(250px);
+	}
 }
 
-/* Wooble */
 .line-wobble {
 	--uib-size: 208px;
 	--uib-speed: 3s;

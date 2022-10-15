@@ -1,6 +1,6 @@
 @use './colors' as *;
 .heading {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	color: $text;
@@ -20,7 +20,7 @@
 }
 
 .text {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	color: $text;
@@ -74,7 +74,15 @@
 			font-size: 24px;
 		}
 	}
-	
+	&-700{
+		font-weight: 700;
+	}
+	&-grey{
+		color: $text-body;
+	}
+	&-muted{
+		color: $text-muted;
+	}
 }
 
 @media (min-width: 576px) {

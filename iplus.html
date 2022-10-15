@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bart Kuchcinski | Product Designer</title>
     <link rel="icon" type="image/svg" href="./img/icon/favicon.svg">
-    <link rel="stylesheet" href="./css/style-iplus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style-iplus.css">
     <script src="./js/script.js" defer></script>
 </head>
 <nav class="nav">
     <div class="container">
         <div class="nav__box">
-            <img class="nav__logo" src="./img/logo.svg" alt="logo">
+            <a href="./index.html"><img class="nav__logo" src="./img/logo.svg" alt="logo"></a>
             <button class="nav__hamburger hamburger">
                 <div class="hamburger__line"></div>
                 <div class="hamburger__line hamburger__line--middle"></div>
@@ -39,7 +39,7 @@
 </nav>
 <main>
     <section class="hero">
-        <img class="hero__img" src="./img/iPlus.png" alt="">
+        <img class="hero__img" src="./img/iPlus.jpg" alt="">
     </section>
     <section class="iplus-app">
         <div class="container">
@@ -100,8 +100,8 @@
                             application since its inception, I decided to introduce some innovations and
                             user-friendliness. The performance of the app is very badly evaluated on both platforms -
                             IOS&Android.</p>
-                        <img class="iplus-app__info-img" src="./img/bart-iplus.png" alt="">
                     </div>
+                    <img class="iplus-app__info-img" src="./img/bart.png" alt="">
                 </div>
             </div>
         </div>
@@ -138,17 +138,20 @@
         <div class="container">
             <div class="market-research__content market-research__content--another">
                 <div class="market-research__image">
-                    <img src="./img/chart.svg" alt="">
+                    <img src="./img/chart-two.svg" alt="">
                     <p class="market-research__image-source text text-eighth">Source: UKE, I quarter 2022</p>
                 </div>
                 <div class="market-research__text">
                     <div class="market-research__subtext">
                         <p class="market-research__subtext-title text text-seventh text-seventh-white">Loss of users</p>
-                        <p class="text text-first">Mobile users, often change their providers, but Plus has been losing many of them in recent years.</p>
+                        <p class="text text-first">Mobile users, often change their providers, but Plus has been losing
+                            many of them in recent years.</p>
                     </div>
                     <div class="market-research__subtext">
-                        <p class="market-research__subtext-title text text-seventh text-seventh-white">Potential problem</p>
-                        <p class="text text-first">Despite the satisfactory price to the number of services offered, the products are not all of good quality, and one of them is - the iPlus application. 
+                        <p class="market-research__subtext-title text text-seventh text-seventh-white">Potential problem
+                        </p>
+                        <p class="text text-first">Despite the satisfactory price to the number of services offered, the
+                            products are not all of good quality, and one of them is - the iPlus application.
                         </p>
                     </div>
                 </div>
@@ -160,11 +163,544 @@
             <div class="problem-statement__content">
                 <div class="problem-statement__header">
                     <h2 class="problem-statement__title heading heading-second">Problem Statement</h2>
-                    <p class="text text-seventh">I used the desk research method and searched the available sources of knowledge to concretely state the downside of the iPlus application. The app has a very high number of negative reviews, which confirms my feelings about using it.</p>
+                    <p class="text text-seventh">I used the <span class="text text-seventh text-700">desk
+                            research</span> method and searched the available sources of
+                        knowledge to concretely state the downside of the iPlus application. The app has a very high
+                        number of negative reviews, which confirms my feelings about using it.</p>
                 </div>
                 <div class="problem-statement__reviews">
-                    <div class="problem-statement__review"><p class="problem-statement__review-name text text-first">Apple Store</p><img class="problem-statement__review-img" src="./img/apple-review.svg" alt=""></div>
-                    <div class="problem-statement__review"><p class="problem-statement__review-name text text-first">Google Play</p><img class="problem-statement__review-img" src="./img/google-review.svg" alt=""></div>
+                    <div class="problem-statement__review">
+                        <p class="problem-statement__review-name text text-first">Apple Store</p><img
+                            class="problem-statement__review-img" src="./img/apple-review.svg" alt="">
+                    </div>
+                    <div class="problem-statement__review">
+                        <p class="problem-statement__review-name text text-first">Google Play</p><img
+                            class="problem-statement__review-img" src="./img/google-review.svg" alt="">
+                    </div>
+                </div>
+                <div class="comment">
+                    <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
+                    <div class="comment__items">
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar1.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">The application works in a totally random manner.
+                                    Sometimes it logs in with no problem
+                                    only to stop at the start screen a few hours later and stop responding to anything.
+                                    Well, and the login method was unnecessarily complicated.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Kasia S.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar2.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">Does not remember login credentials despite
+                                    respawning
+                                    in options. Logging without a
+                                    password inactive. Quality adequate to web service of plus and other operators.
+                                    Should
+                                    immediately open on login screen.</p>
+                                <p class="comment__autor text text-fifth text-grey">Jarek M.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar3.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">A terribly clunky and outdated app, with an
+                                    extremely
+                                    "crude" interface. Comparisons with
+                                    competing operators' apps really pale in comparison. Despite the setting in the
+                                    options
+                                    to remember login data, it still doesn't remember them.</p>
+                                <p class="comment__autor text text-fifth text-grey">Ania J.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="usage-problems">
+                    <div class="usage-problems__box">
+                        <p class="text text-first">User problems</p>
+                        <div class="usage-problems__item">
+                            <img src="./img/close.svg" alt="">
+                            <p class="text text-seventh text-grey">Old Design trends</p>
+                        </div>
+                        <div class="usage-problems__item">
+                            <img src="./img/close.svg" alt="">
+                            <p class="text text-seventh text-grey">Application does not remember login
+                                information</p>
+                        </div>
+                        <div class="usage-problems__item">
+                            <img src="./img/close.svg" alt="">
+                            <p class="text text-seventh text-grey">90% of users use automatic login, which
+                                requires showing the button as a first-class option. Most get lost in the
+                                interface unable to find this function.</p>
+                        </div>
+                        <div class="usage-problems__item">
+                            <img src="./img/close.svg" alt="">
+                            <p class="text text-seventh text-grey">The user has to go too long to get to the
+                                main panel</p>
+                        </div>
+                        <div class="usage-problems__item">
+                            <img src="./img/close.svg" alt="">
+                            <p class="text text-seventh text-grey">Entering data such as email, password is made
+                                invisible by using invisible lines. The preferred solution - the use of input
+                                text fields</p>
+                        </div>
+                        <div class="usage-problems__item">
+                            <img src="./img/close.svg" alt="">
+                            <p class="text text-seventh text-grey">Lack of consistency between brand identity
+                                and mobile app, such as different colors and styles</p>
+                        </div>
+                    </div>
+                    <div class="usage-problems__img">
+                        <img src="./img/login-panel.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="competetive-analysis">
+        <div class="container">
+            <div class="competetive-analysis__top">
+                <h2 class="competetive-analysis__title heading heading-second">Competetive analysis</h2>
+                <p class="text text-seventh text-grey">I analyzed 3 apps offering the same products as the Plus mobile
+                    network. I focused on current trends that competitors have applied and negative comments on both
+                    platforms - App Store and Google Play.</p>
+            </div>
+            <div class="competetive-analysis__section">
+                <div class="competetive-analysis__section-top">
+                    <div class="competetive-analysis__section-top-imgbox">
+                        <img class="competetive-analysis__section-top-img" src="./img/tmobile.png" alt="">
+                        <p class="competetive-analysis__section-top-img-source text text-eighth text-muted">Source: App
+                            Store</p>
+                    </div>
+                    <div class="competetive-analysis__section-top-description">
+                        <h3 class="text text-sixth">My T-Mobile</h3>
+                        <p class="text text-seventh text-seventh-white competetive-analysis__reviews-title">Rating</p>
+                        <div class="competetive-analysis__reviews">
+                            <div class="competetive-analysis__review">
+                                <div class="competetive-analysis__review">
+                                    <div class="competetive-analysis__review-body">
+                                        <p class="text text-sixth">4.1/5</p>
+                                        <p class="competetive-analysis__review-ratings text text-eighth text-grey">25.8K
+                                            Ratings</p>
+                                    </div>
+                                    <p class="competetive-analysis__review-text  text text-eighth text-grey">App Store
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="competetive-analysis__review">
+                                <div class="competetive-analysis__review">
+                                    <div class="competetive-analysis__review-body">
+                                        <p class="text text-sixth">4.3/5</p>
+                                        <p class="competetive-analysis__review-ratings text text-eighth text-grey">141K
+                                            Ratings</p>
+                                    </div>
+                                    <p class="competetive-analysis__review-text  text text-eighth text-grey">Google Play
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="competetive-analysis__text">
+                            <div class="competetive-analysis__subtext">
+                                <p class="competetive-analysis__subtext-title text text-seventh text-seventh-white">Loss
+                                    of
+                                    users</p>
+                                <p class="text text-first">Mobile users, often change their providers, but Plus has been
+                                    losing
+                                    many of them in recent years.</p>
+                            </div>
+                            <div class="competetive-analysis__subtext">
+                                <p class="competetive-analysis__subtext-title text text-seventh text-seventh-white">
+                                    Potential
+                                    problem
+                                </p>
+                                <p class="text text-first">Despite the satisfactory price to the number of services
+                                    offered, the
+                                    products are not all of good quality, and one of them is - the iPlus application.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
+                    <div class="comment__items">
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar4.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">Long to load, too frequent updates without which
+                                    it
+                                    does not work at all.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Kasia S.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar5.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">SIM registration not working, but Simple to use
+                                    and
+                                    should be transparent to everyone.</p>
+                                <p class="comment__autor text text-fifth text-grey">Jarek M.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar6.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">Good, clear, functional. I am satisfied. I
+                                    recommend.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Ania J.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="competetive-analysis__section">
+                <div class="competetive-analysis__section-top">
+                    <div
+                        class="competetive-analysis__section-top-imgbox competetive-analysis__section-top-imgbox--reverse">
+                        <img class="competetive-analysis__section-top-img competetive-analysis__section-top-img-one"
+                            src="./img/orange.png" alt="">
+                        <p
+                            class="competetive-analysis__section-top-img-source competetive-analysis__section-top-img-source--one text text-eighth text-muted">
+                            Source: App Store</p>
+                    </div>
+                    <div
+                        class="competetive-analysis__section-top-description competetive-analysis__section-top-description--reverse">
+                        <h3 class="text text-sixth">My Orange</h3>
+                        <p class="text text-seventh text-seventh-white competetive-analysis__reviews-title">Rating</p>
+                        <div class="competetive-analysis__reviews">
+                            <div class="competetive-analysis__review">
+                                <div class="competetive-analysis__review">
+                                    <div class="competetive-analysis__review-body">
+                                        <p class="text text-sixth">4.6/5</p>
+                                        <p class="competetive-analysis__review-ratings text text-eighth text-grey">47K
+                                            Ratings</p>
+                                    </div>
+                                    <p class="competetive-analysis__review-text  text text-eighth text-grey">App Store
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="competetive-analysis__review">
+                                <div class="competetive-analysis__review">
+                                    <div class="competetive-analysis__review-body">
+                                        <p class="text text-sixth">4.4/5</p>
+                                        <p class="competetive-analysis__review-ratings text text-eighth text-grey">192K
+                                            Ratings</p>
+                                    </div>
+                                    <p class="competetive-analysis__review-text  text text-eighth text-grey">Google Play
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="competetive-analysis__text">
+                            <div class="competetive-analysis__subtext">
+                                <p class="competetive-analysis__subtext-title text text-seventh text-seventh-white">The
+                                    good</p>
+                                <p class="text text-first">The application is fast and has a clear interface for the
+                                    user. It has easy payment of invoices and the ability to check your account balance.
+                                </p>
+                            </div>
+                            <div class="competetive-analysis__subtext">
+                                <p class="competetive-analysis__subtext-title text text-seventh text-seventh-white">The
+                                    bad
+                                </p>
+                                <p class="text text-first">The process of logging into the application, is not fast
+                                    enough, despite a smooth login - it takes a long time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
+                    <div class="comment__items">
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar7.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">The app is great everything can be done from
+                                    within the app in a simple transparent way.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Magda K.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar8.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">No access to Orange-Energy invoices and account
+                                    balances.</p>
+                                <p class="comment__autor text text-fifth text-grey">Jacek S.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar9.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">So far ok but not very intuitive panel.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Franek Z.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="competetive-analysis__section">
+                <div class="competetive-analysis__section-top">
+                    <div class="competetive-analysis__section-top-imgbox">
+                        <img class="competetive-analysis__section-top-img competetive-analysis__section-top-img-two"
+                            src="./img/play24.png" alt="">
+                        <p
+                            class="competetive-analysis__section-top-img-source competetive-analysis__section-top-img-source--two text text-eighth text-muted">
+                            Source: Play.pl</p>
+                    </div>
+                    <div class="competetive-analysis__section-top-description">
+                        <h3 class="text text-sixth">My T-Mobile</h3>
+                        <p class="text text-seventh text-seventh-white competetive-analysis__reviews-title">Rating</p>
+                        <div class="competetive-analysis__reviews">
+                            <div class="competetive-analysis__review">
+                                <div class="competetive-analysis__review">
+                                    <div class="competetive-analysis__review-body">
+                                        <p class="text text-sixth">4.7/5</p>
+                                        <p class="competetive-analysis__review-ratings text text-eighth text-grey">25.8K
+                                            Ratings</p>
+                                    </div>
+                                    <p class="competetive-analysis__review-text  text text-eighth text-grey">App Store
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="competetive-analysis__review">
+                                <div class="competetive-analysis__review">
+                                    <div class="competetive-analysis__review-body">
+                                        <p class="text text-sixth">4.3/5</p>
+                                        <p class="competetive-analysis__review-ratings text text-eighth text-grey">141K
+                                            Ratings</p>
+                                    </div>
+                                    <p class="competetive-analysis__review-text  text text-eighth text-grey">Google Play
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="competetive-analysis__text">
+                            <div class="competetive-analysis__subtext">
+                                <p class="competetive-analysis__subtext-title text text-seventh text-seventh-white">The
+                                    good</p>
+                                <p class="text text-first">The best-rated interface of all mobile network providers in
+                                    terms of design and functionality.</p>
+                            </div>
+                            <div class="competetive-analysis__subtext">
+                                <p class="competetive-analysis__subtext-title text text-seventh text-seventh-white">The
+                                    bad
+                                </p>
+                                <p class="text text-first">Lacking the ability to change the language, the application
+                                    even after making changes still does not offer a full language change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
+                    <div class="comment__items">
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar10.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">Useful app, easy to read, helps save time, I
+                                    recommend to everyone.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Krzysztof F.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar11.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">No proper descriptions of functions to check
+                                    account balance and data consumption.</p>
+                                <p class="comment__autor text text-fifth text-grey">Hania L.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar12.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">This application has many languages! It is much
+                                    easier to use as it is in English.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Roman H.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="user-survey">
+        <div class="container">
+            <div class="user-survey__content">
+                <h2 class="heading heading-second">User Survey</h2>
+                <p class="text text-seventh text-seventh-white">I conducted a quick survey of friends and family who
+                    regularly use the iPlus app to access services and check and pay bills.</p>
+                <div class="user-survey__center">
+                    <img src="./img/charts.svg" alt="">
+                </div>
+                <div class="comment">
+                    <p class="comment__title text text-sixth">Notable comments</p>
+                    <div class="comment__items">
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar10.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">The app is great. Everything can be done from the
+                                    app in a simple clear way.
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Bartosz T.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar11.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">No proper descriptions of functions to check
+                                    account balance and data consumption.</p>
+                                <p class="comment__autor text text-fifth text-grey">Weronika N.</p>
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <img class="comment__avatar" src="./img/Avatar12.png" alt="">
+                            <div class="comment__text">
+                                <p class="text text-fourth text-grey">The application looks like it was created at the
+                                    dawn of the Internet era :)
+                                </p>
+                                <p class="comment__autor text text-fifth text-grey">Krzysztof Z.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="personas">
+        <div class="container">
+            <div class="personas__content">
+                <div class="personas__content-first">
+                    <div class="personas__content-first-text">
+                        <h2 class="personas__content__title text text-third">What does this information give me?
+                        </h2>
+                        <p class="text text-seventh">The survey confirms my earlier assumptions based on user reviews.
+                            They are most bothered by
+                            the login process, which is too long and causes annoyance in traversing too many screens.
+                            And the unchanged look of the app for a long time, causes boredom, and the lack of updates
+                            with new experiences makes the interface unreadable.</p>
+                    </div>
+                    <img class="personas__content-first-img" src="./img/bart-three.png" alt="">
+                </div>
+                <div class="personas__content-second">
+                    <h2 class="personas__content__title heading heading-second">Personas</h2>
+                    <p class="text text-seventh">I created two personas to help me explore the needs of the app's users
+                        -
+                        a young person and a person with a wider range of needs. </p>
+                    <div class="personas__content-second__imgbox">
+                        <img src="./img/persona1.png" alt="">
+                        <img src="./img/persona2.png" alt="">
+                    </div>
+                </div>
+                <div class="personas__content-first">
+                    <div class="personas__content-first-text">
+                        <h2 class="personas__content__title text text-third">Time to start designing!</h2>
+                        <p class="text text-seventh">After going through all my research data, it was time to get down
+                            to the actual design of the application, starting with sketching the first flows and initial
+                            low-fidelity wireframes</p>
+                    </div>
+                    <img class="personas__content-first-img" src="./img/bart-two.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flow-diagram">
+        <div class="container">
+            <div class="flow-diagram__content">
+                <div class="flow-diagram__text">
+                    <h2 class="heading heading-second flow-diagram__text-title">Flow Diagram</h2>
+                    <p class="text text-seventh text text-seventh-white">
+                        To outline all the necessary functionality, I created a simple flow diagram of the main tasks
+                        the user can do. One of the flows is shown below. Fail state flows were also created, but are
+                        not shown due to space constraints. You can see it in prototype.
+                    </p>
+                </div>
+                <img class="flow-diagram__img" src="./img/userflow.svg" alt="User flow diagram">
+            </div>
+        </div>
+    </section>
+    <section class="wireframes">
+        <div class="container">
+            <div class="wireframes__content">
+                <div class="wireframes__text">
+                    <h2 class="heading heading-second wireframes__text-title">Low-Fidelity Wireframes</h2>
+                    <p class="text text-seventh text text-seventh-white">After creating the flow diagram, I began
+                        sketching low-fidelity wireframes of the main user flow on paper, which I then transferred
+                        to a digital version of it.
+                    </p>
+                </div>
+                <img class="wireframes__img" src="./img/mockup-grey.png" alt="User flow diagram">
+            </div>
+        </div>
+    </section>
+    <section class="uidesign">
+        <div class="container">
+            <div class="uidesign__content">
+                <div class="uidesign__text">
+                    <h2 class="heading heading-second uidesign__text-title">High-Fidelity UI Design</h2>
+                    <p class="text text-seventh text text-seventh-white">Once the initial flow was complete and the
+                        wireframes were ready, I began to create some main screens for the application. I created a
+                        short Style Guide to show the styles used in the project. To build them, I used a plugin in
+                        Figma that generates the Material Design color palette - 50-900. To maintain consistency in the
+                        interface and hierarchy of elements, I introduced different font weights.
+                    </p>
+                </div>
+                <div class="uidesign__elements">
+                    <div class="uidesign__colors">
+                        <p class="text text-second">Colors</p>
+                        <div>
+                            <p class="text text-third uidesign__colors--title">Primary</p>
+                            <img class="uidesign__colors--img" src="./img/primary-colors.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text text-third uidesign__colors--title">Secondary</p>
+                            <img class="uidesign__colors--img" src="./img/secondary-colors.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text text-third uidesign__colors--title">Neutrals</p>
+                            <img class="uidesign__colors--img" src="./img/neutrals-colors.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text text-second uidesign__colors--last uidesign__colors--title2">Why did I break
+                                the rules?</p>
+                            <p class="text text-third">"Rules are made to be broken." And seriously, the app is fully
+                                consistent with the branding, which was recently updated by Plus. Wanting to preserve
+                                the existing brand image, I decided to do so.</p>
+                        </div>
+                    </div>
+                    <div class="uidesign__typeface">
+                        <div>
+                            <p class="text text-second uidesign__typeface--title">Colors</p>
+                            <p class="text text-third">Roboto</p>
+                            <p class="text text-third">Regular, Medium, SemiBold, Bold</p>
+                            <p class="text text-sixth uidesign__typeface--abc">AaBbCcDdEeFfGgHh</p>
+                            <img class="uidesign__typeface--img" src="./img/iplus-logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="uidesign__mockup"></div>
+        <div class="container">
+            <div class="uidesign__content">
+                <div class="uidesign__text2">
+                    <div class="uidesign__text2--description">
+                        <p class="text text-seventh text-seventh-white text-700">Let's take a look at the old version</p>
+                        <p class="text text-seventh">I took a moment to think about the style in which the application should be created. It lacked many factors, one of which was color consistency with the brand. The second thing was the modern look, which in the old version strongly deviated from current trends. The current iPlus app is not WCAG compliant (e.g. buttons)</p>
+                    </div>
+                    <img class="uidesign__text2--img" src="./img/iplus-img3.png" alt="">
                 </div>
             </div>
         </div>
