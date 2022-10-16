@@ -232,6 +232,9 @@ table {
 .text-navitem-slide {
   font-size: 24px;
 }
+.text-navitem--mod {
+  color: #050623;
+}
 .text-700 {
   font-weight: 700;
 }

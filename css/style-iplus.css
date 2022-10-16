@@ -806,7 +806,7 @@ body {
     display: block;
     position: fixed;
     right: 2.5%;
-    bottom: 15%;
+    bottom: 5%;
     z-index: 1000;
   }
   .nav__hamburger, .nav__slide-out {
@@ -882,7 +882,7 @@ body {
   }
   .prototype__window {
     display: block;
-    padding-top: 104px;
+    margin-top: 104px;
   }
   .prototype__window iframe {
     width: 100%;
