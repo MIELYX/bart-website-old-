@@ -83,6 +83,9 @@
 	&-muted{
 		color: $text-muted;
 	}
+	&-underline{
+		text-decoration: underline;
+	}
 }
 
 @media (min-width: 576px) {

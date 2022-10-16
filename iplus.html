@@ -16,7 +16,7 @@
 <nav class="nav">
     <div class="container">
         <div class="nav__box">
-            <a href="./index.html"><img class="nav__logo" src="./img/logo.svg" alt="logo"></a>
+            <a href="./index.html"><img loading="lazy" class="nav__logo" src="./img/logo.svg" alt="logo"></a>
             <button class="nav__hamburger hamburger">
                 <div class="hamburger__line"></div>
                 <div class="hamburger__line hamburger__line--middle"></div>
@@ -28,6 +28,7 @@
                     <a class="btn" href="#lets-be-in-touch" title="link to let's be in touch">Contact</a>
             </div>
         </div>
+        <a class="nav__scroll" href="#"><img loading="lazy" class="nav__scroll" src="./img/icon/scroll.svg" alt=""></a>
     </div>
     <div class="nav__slide-out">
         <a class="text text-navitem text-navitem-slide item" href="#what-i-do" title="link to works section">Works</a>
@@ -39,7 +40,7 @@
 </nav>
 <main>
     <section class="hero">
-        <img class="hero__img" src="./img/iPlus.jpg" alt="">
+        <img loading="lazy" class="hero__img" src="./img/iPlus.jpg" alt="iPlus mockup">
     </section>
     <section class="iplus-app">
         <div class="container">
@@ -47,17 +48,17 @@
                 <h1 class="heading heading-first">iPlus App</h1>
                 <p class="text text-seventh">New look and functionaliteis of iPlus app</p>
                 <div class="iplus-app__items">
-                    <span class="iplus-app__item text-navitem">Market research</span>
-                    <span class="iplus-app__item text-navitem">Problem statement</span>
-                    <span class="iplus-app__item text-navitem">Competetive analysis</span>
-                    <span class="iplus-app__item text-navitem">User survey</span>
-                    <span class="iplus-app__item text-navitem">Personas</span>
-                    <span class="iplus-app__item text-navitem">Wireframes</span>
-                    <span class="iplus-app__item text-navitem">Flow diagram</span>
-                    <span class="iplus-app__item text-navitem">High-Fidelity UI</span>
-                    <span class="iplus-app__item text-navitem">Prototype</span>
-                    <span class="iplus-app__item text-navitem">Usability testing</span>
-                    <span class="iplus-app__item text-navitem">Accessibility evaluation</span>
+                    <a href="#market-research" class="iplus-app__item text-navitem">Market research</a>
+                    <a href="#problem-statement" class="iplus-app__item text-navitem">Problem statement</a>
+                    <a href="#competetive-analysis" class="iplus-app__item text-navitem">Competetive analysis</a>
+                    <a href="#user-survey" class="iplus-app__item text-navitem">User survey</a>
+                    <a href="#personas" class="iplus-app__item text-navitem">Personas</a>
+                    <a href="#wireframes" class="iplus-app__item text-navitem">Wireframes</a>
+                    <a href="#flow-diagram" class="iplus-app__item text-navitem">Flow diagram</a>
+                    <a href="#high-fidelity" class="iplus-app__item text-navitem">High-Fidelity UI</a>
+                    <a href="#prototype" class="iplus-app__item text-navitem">Prototype</a>
+                    <a href="#usability" class="iplus-app__item text-navitem">Usability testing</a>
+                    <a href="#accessibility" class="iplus-app__item text-navitem">Accessibility evaluation</a>
                 </div>
                 <div class="iplus-app__answers">
                     <div class="iplus-app__answer">
@@ -101,12 +102,12 @@
                             user-friendliness. The performance of the app is very badly evaluated on both platforms -
                             IOS&Android.</p>
                     </div>
-                    <img class="iplus-app__info-img" src="./img/bart.png" alt="">
+                    <img loading="lazy" class="iplus-app__info-img" src="./img/bart.png" alt="Bart photo">
                 </div>
             </div>
         </div>
     </section>
-    <section class="market-research">
+    <section id="market-research" class="market-research">
         <div class="container">
             <div class="market-research__content">
                 <div class="market-research__text">
@@ -128,7 +129,7 @@
                     </div>
                 </div>
                 <div class="market-research__image">
-                    <img src="./img/chart.svg" alt="">
+                    <img loading="lazy" src="./img/chart.svg" alt="chart">
                     <p class="market-research__image-source text text-eighth">Source: UKE</p>
                 </div>
             </div>
@@ -138,7 +139,7 @@
         <div class="container">
             <div class="market-research__content market-research__content--another">
                 <div class="market-research__image">
-                    <img src="./img/chart-two.svg" alt="">
+                    <img loading="lazy" src="./img/chart-two.svg" alt="chart">
                     <p class="market-research__image-source text text-eighth">Source: UKE, I quarter 2022</p>
                 </div>
                 <div class="market-research__text">
@@ -158,7 +159,7 @@
             </div>
         </div>
     </section>
-    <section class="problem-statement">
+    <section id="problem-statement" class="problem-statement">
         <div class="container">
             <div class="problem-statement__content">
                 <div class="problem-statement__header">
@@ -170,19 +171,21 @@
                 </div>
                 <div class="problem-statement__reviews">
                     <div class="problem-statement__review">
-                        <p class="problem-statement__review-name text text-first">Apple Store</p><img
-                            class="problem-statement__review-img" src="./img/apple-review.svg" alt="">
+                        <a href="https://apps.apple.com/pl/app/iplus/id974674099?l=pl" target="_blank"
+                            class="problem-statement__review-name text text-first">App Store</a><img loading="lazy"
+                            class="problem-statement__review-img" src="./img/apple-review.svg" alt="app store review">
                     </div>
                     <div class="problem-statement__review">
-                        <p class="problem-statement__review-name text text-first">Google Play</p><img
-                            class="problem-statement__review-img" src="./img/google-review.svg" alt="">
+                        <a href="https://play.google.com/store/apps/details?id=pl.plus.plusonline&hl=pl&gl=US"
+                            target="_blank" class="problem-statement__review-name text text-first">Google Play</a><img
+                            loading="lazy" class="problem-statement__review-img" src="./img/google-review.svg" alt="google play review">
                     </div>
                 </div>
                 <div class="comment">
                     <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
                     <div class="comment__items">
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar1.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar1.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">The application works in a totally random manner.
                                     Sometimes it logs in with no problem
@@ -193,7 +196,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar2.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar2.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">Does not remember login credentials despite
                                     respawning
@@ -205,7 +208,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar3.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar3.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">A terribly clunky and outdated app, with an
                                     extremely
@@ -222,45 +225,45 @@
                     <div class="usage-problems__box">
                         <p class="text text-first">User problems</p>
                         <div class="usage-problems__item">
-                            <img src="./img/close.svg" alt="">
+                            <img loading="lazy" src="./img/close.svg" alt="">
                             <p class="text text-seventh text-grey">Old Design trends</p>
                         </div>
                         <div class="usage-problems__item">
-                            <img src="./img/close.svg" alt="">
+                            <img loading="lazy" src="./img/close.svg" alt="">
                             <p class="text text-seventh text-grey">Application does not remember login
                                 information</p>
                         </div>
                         <div class="usage-problems__item">
-                            <img src="./img/close.svg" alt="">
+                            <img loading="lazy" src="./img/close.svg" alt="">
                             <p class="text text-seventh text-grey">90% of users use automatic login, which
                                 requires showing the button as a first-class option. Most get lost in the
                                 interface unable to find this function.</p>
                         </div>
                         <div class="usage-problems__item">
-                            <img src="./img/close.svg" alt="">
+                            <img loading="lazy" src="./img/close.svg" alt="">
                             <p class="text text-seventh text-grey">The user has to go too long to get to the
                                 main panel</p>
                         </div>
                         <div class="usage-problems__item">
-                            <img src="./img/close.svg" alt="">
+                            <img loading="lazy" src="./img/close.svg" alt="">
                             <p class="text text-seventh text-grey">Entering data such as email, password is made
                                 invisible by using invisible lines. The preferred solution - the use of input
                                 text fields</p>
                         </div>
                         <div class="usage-problems__item">
-                            <img src="./img/close.svg" alt="">
+                            <img loading="lazy" src="./img/close.svg" alt="">
                             <p class="text text-seventh text-grey">Lack of consistency between brand identity
                                 and mobile app, such as different colors and styles</p>
                         </div>
                     </div>
                     <div class="usage-problems__img">
-                        <img src="./img/login-panel.png" alt="">
+                        <img loading="lazy" src="./img/login-panel.png" alt="old login panel">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="competetive-analysis">
+    <section id="competetive-analysis" class="competetive-analysis">
         <div class="container">
             <div class="competetive-analysis__top">
                 <h2 class="competetive-analysis__title heading heading-second">Competetive analysis</h2>
@@ -271,7 +274,8 @@
             <div class="competetive-analysis__section">
                 <div class="competetive-analysis__section-top">
                     <div class="competetive-analysis__section-top-imgbox">
-                        <img class="competetive-analysis__section-top-img" src="./img/tmobile.png" alt="">
+                        <img loading="lazy" class="competetive-analysis__section-top-img" src="./img/tmobile.png"
+                            alt="tmobile mockup">
                         <p class="competetive-analysis__section-top-img-source text text-eighth text-muted">Source: App
                             Store</p>
                     </div>
@@ -328,7 +332,7 @@
                     <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
                     <div class="comment__items">
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar4.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar4.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">Long to load, too frequent updates without which
                                     it
@@ -338,7 +342,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar5.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar5.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">SIM registration not working, but Simple to use
                                     and
@@ -347,7 +351,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar6.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar6.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">Good, clear, functional. I am satisfied. I
                                     recommend.
@@ -362,8 +366,9 @@
                 <div class="competetive-analysis__section-top">
                     <div
                         class="competetive-analysis__section-top-imgbox competetive-analysis__section-top-imgbox--reverse">
-                        <img class="competetive-analysis__section-top-img competetive-analysis__section-top-img-one"
-                            src="./img/orange.png" alt="">
+                        <img loading="lazy"
+                            class="competetive-analysis__section-top-img competetive-analysis__section-top-img-one"
+                            src="./img/orange.png" alt="orange mockup">
                         <p
                             class="competetive-analysis__section-top-img-source competetive-analysis__section-top-img-source--one text text-eighth text-muted">
                             Source: App Store</p>
@@ -419,7 +424,7 @@
                     <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
                     <div class="comment__items">
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar7.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar7.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">The app is great everything can be done from
                                     within the app in a simple transparent way.
@@ -428,7 +433,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar8.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar8.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">No access to Orange-Energy invoices and account
                                     balances.</p>
@@ -436,7 +441,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar9.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar9.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">So far ok but not very intuitive panel.
                                 </p>
@@ -449,8 +454,9 @@
             <div class="competetive-analysis__section">
                 <div class="competetive-analysis__section-top">
                     <div class="competetive-analysis__section-top-imgbox">
-                        <img class="competetive-analysis__section-top-img competetive-analysis__section-top-img-two"
-                            src="./img/play24.png" alt="">
+                        <img loading="lazy"
+                            class="competetive-analysis__section-top-img competetive-analysis__section-top-img-two"
+                            src="./img/play24.png" alt="play24 mockup">
                         <p
                             class="competetive-analysis__section-top-img-source competetive-analysis__section-top-img-source--two text text-eighth text-muted">
                             Source: Play.pl</p>
@@ -504,7 +510,7 @@
                     <p class="comment__title text text-seventh text-seventh-white">Comments of users</p>
                     <div class="comment__items">
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar10.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar10.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">Useful app, easy to read, helps save time, I
                                     recommend to everyone.
@@ -513,7 +519,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar11.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar11.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">No proper descriptions of functions to check
                                     account balance and data consumption.</p>
@@ -521,7 +527,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar12.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar12.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">This application has many languages! It is much
                                     easier to use as it is in English.
@@ -534,20 +540,20 @@
             </div>
         </div>
     </section>
-    <section class="user-survey">
+    <section id="user-survey" class="user-survey">
         <div class="container">
             <div class="user-survey__content">
                 <h2 class="heading heading-second">User Survey</h2>
                 <p class="text text-seventh text-seventh-white">I conducted a quick survey of friends and family who
                     regularly use the iPlus app to access services and check and pay bills.</p>
                 <div class="user-survey__center">
-                    <img src="./img/charts.svg" alt="">
+                    <img loading="lazy" src="./img/charts.svg" alt="chart">
                 </div>
                 <div class="comment">
                     <p class="comment__title text text-sixth">Notable comments</p>
                     <div class="comment__items">
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar10.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar10.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">The app is great. Everything can be done from the
                                     app in a simple clear way.
@@ -557,7 +563,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar11.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar11.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">No proper descriptions of functions to check
                                     account balance and data consumption.</p>
@@ -565,7 +571,7 @@
                             </div>
                         </div>
                         <div class="comment__item">
-                            <img class="comment__avatar" src="./img/Avatar12.png" alt="">
+                            <img loading="lazy" class="comment__avatar" src="./img/Avatar12.png" alt="user">
                             <div class="comment__text">
                                 <p class="text text-fourth text-grey">The application looks like it was created at the
                                     dawn of the Internet era :)
@@ -591,16 +597,16 @@
                             And the unchanged look of the app for a long time, causes boredom, and the lack of updates
                             with new experiences makes the interface unreadable.</p>
                     </div>
-                    <img class="personas__content-first-img" src="./img/bart-three.png" alt="">
+                    <img loading="lazy" class="personas__content-first-img" src="./img/bart-three.png" alt="bart">
                 </div>
-                <div class="personas__content-second">
+                <div id="personas" class="personas__content-second">
                     <h2 class="personas__content__title heading heading-second">Personas</h2>
                     <p class="text text-seventh">I created two personas to help me explore the needs of the app's users
                         -
                         a young person and a person with a wider range of needs. </p>
                     <div class="personas__content-second__imgbox">
-                        <img src="./img/persona1.png" alt="">
-                        <img src="./img/persona2.png" alt="">
+                        <img loading="lazy" src="./img/persona1.png" alt="Jacek">
+                        <img loading="lazy" src="./img/persona2.png" alt="Weronika">
                     </div>
                 </div>
                 <div class="personas__content-first">
@@ -608,14 +614,14 @@
                         <h2 class="personas__content__title text text-third">Time to start designing!</h2>
                         <p class="text text-seventh">After going through all my research data, it was time to get down
                             to the actual design of the application, starting with sketching the first flows and initial
-                            low-fidelity wireframes</p>
+                            low-fidelity wireframes.</p>
                     </div>
-                    <img class="personas__content-first-img" src="./img/bart-two.png" alt="">
+                    <img loading="lazy" class="personas__content-first-img" src="./img/bart-two.png" alt="Bart">
                 </div>
             </div>
         </div>
     </section>
-    <section class="flow-diagram">
+    <section id="flow-diagram" class="flow-diagram">
         <div class="container">
             <div class="flow-diagram__content">
                 <div class="flow-diagram__text">
@@ -626,21 +632,21 @@
                         not shown due to space constraints. You can see it in prototype.
                     </p>
                 </div>
-                <img class="flow-diagram__img" src="./img/userflow.svg" alt="User flow diagram">
+                <img loading="lazy" class="flow-diagram__img" src="./img/userflow.png" alt="User flow diagram">
             </div>
         </div>
     </section>
-    <section class="wireframes">
+    <section id="wireframes" class="wireframes">
         <div class="container">
             <div class="wireframes__content">
                 <div class="wireframes__text">
                     <h2 class="heading heading-second wireframes__text-title">Low-Fidelity Wireframes</h2>
-                    <p class="text text-seventh text text-seventh-white">After creating the flow diagram, I began
+                    <p class="text text-seventh">After creating the flow diagram, I began
                         sketching low-fidelity wireframes of the main user flow on paper, which I then transferred
                         to a digital version of it.
                     </p>
                 </div>
-                <img class="wireframes__img" src="./img/mockup-grey.png" alt="User flow diagram">
+                <img loading="lazy" class="wireframes__img" src="./img/mockup-grey.png" alt="User flow diagram">
             </div>
         </div>
     </section>
@@ -648,8 +654,9 @@
         <div class="container">
             <div class="uidesign__content">
                 <div class="uidesign__text">
-                    <h2 class="heading heading-second uidesign__text-title">High-Fidelity UI Design</h2>
-                    <p class="text text-seventh text text-seventh-white">Once the initial flow was complete and the
+                    <h2 id="high-fidelity" class="heading heading-second uidesign__text-title">High-Fidelity UI Design
+                    </h2>
+                    <p class="text text-seventh">Once the initial flow was complete and the
                         wireframes were ready, I began to create some main screens for the application. I created a
                         short Style Guide to show the styles used in the project. To build them, I used a plugin in
                         Figma that generates the Material Design color palette - 50-900. To maintain consistency in the
@@ -661,15 +668,15 @@
                         <p class="text text-second">Colors</p>
                         <div>
                             <p class="text text-third uidesign__colors--title">Primary</p>
-                            <img class="uidesign__colors--img" src="./img/primary-colors.svg" alt="">
+                            <img loading="lazy" class="uidesign__colors--img" src="./img/primary-colors.svg" alt="">
                         </div>
                         <div>
                             <p class="text text-third uidesign__colors--title">Secondary</p>
-                            <img class="uidesign__colors--img" src="./img/secondary-colors.svg" alt="">
+                            <img loading="lazy" class="uidesign__colors--img" src="./img/secondary-colors.svg" alt="">
                         </div>
                         <div>
                             <p class="text text-third uidesign__colors--title">Neutrals</p>
-                            <img class="uidesign__colors--img" src="./img/neutrals-colors.svg" alt="">
+                            <img loading="lazy" class="uidesign__colors--img" src="./img/neutrals-colors.svg" alt="">
                         </div>
                         <div>
                             <p class="text text-second uidesign__colors--last uidesign__colors--title2">Why did I break
@@ -684,15 +691,17 @@
                             <p class="text text-second uidesign__typeface--title">Colors</p>
                             <p class="text text-third">Roboto</p>
                             <p class="text text-third">Regular, Medium, SemiBold, Bold</p>
-                            <p class="text text-sixth uidesign__typeface--abc">AaBbCcDdEeFfGgHh</p>
-                            <img class="uidesign__typeface--img" src="./img/iplus-logo.svg" alt="">
+                            <img loading="lazy" class="uidesign__typeface--abc" src="./img/abc.svg" alt="">
+                            <img loading="lazy" class="uidesign__typeface--img" src="./img/iplus-logo.svg" alt="iPlus logo">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
-        <div class="uidesign__mockup"></div>
+        <div class="uidesign__mockup">
+            <img loading="lazy" src="./img/mockup-two.jpg" alt="iPlus mockup">
+        </div>
         <div class="container">
             <div class="uidesign__content">
                 <div class="uidesign__text2">
@@ -708,7 +717,7 @@
                         </p>
                         </p>
                     </div>
-                    <img class="uidesign__text2--img" src="./img/iplus-img3.png" alt="">
+                    <img loading="lazy" class="uidesign__text2--img" src="./img/iplus-img3.png" alt="iPlus mockup">
                 </div>
                 <div class="uidesign__text3">
                     <p class="text text-seventh text-seventh-white text-700 uidesign__text3--title">Lots of mistakes
@@ -719,7 +728,7 @@
 
                     </p>
                 </div>
-                <img class="uidesign__img" src="./img/mistakes.png" alt="">
+                <img loading="lazy" class="uidesign__img" src="./img/mistakes.png" alt="iPlus">
             </div>
         </div>
     </section>
@@ -733,7 +742,7 @@
                     32 and 40. In the project I used <span class="text text-seventh text-seventh-white text-700">Auto
                         Layout</span>, which strongly speeds up the work, but checking the distances of the elements by
                     a square with widths of 8x.</p>
-                <img class="alginment__img" src="./img/alignment.png" alt="">
+                <img loading="lazy" class="alginment__img" src="./img/alignment.png" alt="">
             </div>
         </div>
     </section>
@@ -746,16 +755,16 @@
                     app on a real user group. Below is an example of how it works, with cellular network coverage, the
                     application automatically loads.</p>
             </div>
-            <img class="prototype__img" src="./img/prototype.png" alt="">
+            <img loading="lazy" class="prototype__img" src="./img/prototype.png" alt="">
         </div>
-        <div class="prototype__window">
+        <div id="prototype" class="prototype__window">
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPA98QRn9SwyA5iNInlIgzq%2FiPlus-Prototype%3Fpage-id%3D0%253A1%26node-id%3D47%253A2242%26viewport%3D348%252C19%252C0.1%26scaling%3Dscale-down%26starting-point-node-id%3D47%253A2242%26show-proto-sidebar%3D1"
                 allowfullscreen></iframe>
 
         </div>
     </section>
-    <section class="usability">
+    <section id="usability" class="usability">
         <div class="container">
             <div class="usability__content">
                 <div class="usability__text">
@@ -768,14 +777,14 @@
                     <div class="usability__box1--left">
                         <p class="text text-third">Study details</p>
                         <div class="usability__item">
-                            <img src="./img/icon/checked2.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked2.svg" alt="">
                             <p class="text text-seventh">
                                 I created a plan that is based on running a test of the old version of the application
                                 and the new one.
                             </p>
                         </div>
                         <div class="usability__item">
-                            <img src="./img/icon/checked2.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked2.svg" alt="">
                             <p class="text text-seventh">
                                 I designed the survey on the <span class="text text-seventh text-700">Maze</span>
                                 platform because it offers many possibilities for
@@ -783,7 +792,7 @@
                             </p>
                         </div>
                         <div class="usability__item">
-                            <img src="./img/icon/checked2.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked2.svg" alt="">
                             <p class="text text-seventh">
                                 <span class="text text-seventh text-700">5 people</span> took part in the survey
                                 <i class="text text-seventh">(Nielsen Norman Group - Research)</i>. Not every one of
@@ -792,7 +801,7 @@
                             </p>
                         </div>
                         <div class="usability__item">
-                            <img src="./img/icon/checked2.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked2.svg" alt="">
                             <p class="text text-seventh">The goal of the study is to see if it is easier for users to
                                 see the - <span class="text text-seventh text-700">go directly to the app button</span>
                                 that allows them to quickly log into the app,
@@ -802,14 +811,14 @@
                         </div>
                     </div>
                     <div class="usability__box1--right">
-                        <img src="./img/icon/no-yes.svg" alt="">
+                        <img loading="lazy" src="./img/icon/no-yes.svg" alt="">
                     </div>
                 </div>
                 <div class="usability__box2">
                     <div class="usability__box2--left">
                         <p class="text text-third">Study details</p>
                         <div class="usability__item">
-                            <img src="./img/icon/checked3.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked3.svg" alt="">
                             <p class="text text-seventh">The user selects the "Go to application" option every time
                                 because it is the only and fastest option to get to the app. He knows exactly where to
                                 click and doesn't wonder how he has to log in through the highlighted auto login button
@@ -817,7 +826,7 @@
                             </p>
                         </div>
                         <div class="usability__item">
-                            <img src="./img/icon/checked3.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked3.svg" alt="">
                             <p class="text text-seventh"><span class="text text-seventh text-700">I have reduced the
                                     average time each time a user logs into the app from 13.5 seconds to
                                     3.8 seconds</span>, by removing unnecessary screens that take time away from the
@@ -828,7 +837,7 @@
                             </p>
                         </div>
                         <div class="usability__item usability__item--last">
-                            <img src="./img/icon/checked3.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked3.svg" alt="">
                             <p class="text text-seventh">I have created an option to rate both versions of the
                                 application -<span class="text text-seventh text-700"> Improvement in average rating
                                     from 4.8/10 to 8.3/10</span>. This pulls -
@@ -837,13 +846,13 @@
                         </div>
                         <p class="text text-third">Study details</p>
                         <div class="usability__item">
-                            <img src="./img/icon/checked4.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked4.svg" alt="">
                             <p class="text text-seventh">Checking the
                                 performance of biometric login
                             </p>
                         </div>
                         <div class="usability__item">
-                            <img src="./img/icon/checked4.svg" alt="">
+                            <img loading="lazy" src="./img/icon/checked4.svg" alt="">
                             <p class="text text-seventh">I would contact the
                                 developers of the application to make the application remember the user's data and
                                 we would be able to reduce the number of screens to zero! This is the biggest user
@@ -852,25 +861,27 @@
                         </div>
                     </div>
                     <div class="usability__box2--right">
-                        <img src="./img/usability.png" alt="">
+                        <img loading="lazy" src="./img/usability.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="accessibility">
+    <section id="accessibility" class="accessibility">
         <div class="container">
             <div class="accessibility__content">
                 <div class="accessibility__text">
                     <h2 class="accessibility__title heading heading-second">Accessibility Check</h2>
                     <p class="text text-seventh text-seventh-white">The application was evaluated for contrast and meets
                         <span class="text text-seventh text-seventh-white text-700">full AAA standards</span>.
-                        Accessibility was checked with the Figma - Contrast plugin and Color Contrast Checker from
-                        Coolors. Unlike the previous version of the app, this one is fully accessible.
+                        Accessibility was checked with the Figma - Contrast plugin and <a
+                            href="https://coolors.co/contrast-checker/00293f-00eb65" target="_blank"
+                            class="text text-underline">Color Contrast Checker from
+                            Coolors</a>. Unlike the previous version of the app, this one is fully accessible.
                     </p>
                 </div>
                 <div class="accessibility__box">
-                    <img src="./img/accessibility.png" alt="">
+                    <img loading="lazy" src="./img/accessibility.png" alt="">
                     <div class="accessibility__box--text">
                         <p class="accessibility__title text text-third">CTA Button</p>
                         <p class="accessibility__box--lead text text-seventh text-seventh-white">This is the app's main
@@ -884,7 +895,7 @@
     <section class="summary">
         <div class="container">
             <div class="summary__content">
-                <img src="./img/mamoji4.png" alt="">
+                <img loading="lazy" src="./img/mamoji4.png" alt="">
                 <div>
                     <p class="summary__title text text-third">Project Summary</p>
                     <p class="text text-seventh">During the project, I managed to evaluate the market research, do a
@@ -901,7 +912,7 @@
         </div>
     </section>
     <section class="mockup3">
-
+        <img loading="lazy" src="./img/mockup3.jpg" alt="">
     </section>
 </main>
 <footer class="footer section">

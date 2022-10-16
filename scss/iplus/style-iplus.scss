@@ -2,7 +2,7 @@
 
 :root {
 	scroll-behavior: smooth;
-	scroll-padding: 10em;
+	scroll-padding: 5em;
 	background-color: $background;
 }
 body {
@@ -21,6 +21,12 @@ body {
 	left: 0;
 	width: 100%;
 	background-color: $background;
+	.container {
+		position: relative;
+	}
+	&__scroll {
+		display: none;
+	}
 	&__box {
 		display: grid;
 		grid-template-columns: repeat(2, max-content);
@@ -189,6 +195,8 @@ body {
 	}
 	&__review {
 		&-name {
+			text-decoration: underline;
+			display: block;
 			padding-bottom: 16px;
 		}
 		&-img {
@@ -468,7 +476,13 @@ body {
 			padding-bottom: 8px;
 		}
 		&--abc {
+			display: block;
+			width: 100%;
+			max-width: 300px;
 			padding: 48px 0;
+		}
+		&--img {
+			max-width: 60px;
 		}
 	}
 	&__text2 {
@@ -487,10 +501,9 @@ body {
 		}
 	}
 	&__mockup {
-		background-image: url('../../img/mockup-two.jpg');
-		background-size: cover;
-		background-position: center;
-		padding-bottom: 75%;
+		img {
+			width: 100%;
+		}
 	}
 	&__img {
 		padding-top: 50px;
@@ -647,10 +660,9 @@ body {
 	}
 }
 .mockup3 {
-	background-image: url('../../img/mockup3.jpg');
-	background-size: cover;
-	background-position: center;
-	padding-bottom: 75%;
+	img {
+		width: 100%;
+	}
 }
 
 .footer {
@@ -658,7 +670,7 @@ body {
 	&__content {
 		text-align: center;
 	}
-	&__text{
+	&__text {
 		padding-bottom: 16px;
 	}
 }
@@ -668,6 +680,13 @@ body {
 		overflow: visible !important;
 	}
 	.nav {
+		&__scroll {
+			display: block;
+			position: fixed;
+			right: 10%;
+			bottom: 33%;
+			z-index: 1000;
+		}
 		&__hamburger,
 		&__slide-out {
 			display: none;
@@ -722,7 +741,7 @@ body {
 				padding-bottom: 72px;
 			}
 			&--img {
-				max-width: 60px;
+				max-width: none;
 			}
 		}
 		&__img {
@@ -926,11 +945,6 @@ body {
 		&__elements {
 			grid-template-columns: 590px 300px;
 			gap: 24px;
-		}
-		&__typeface {
-			&--img {
-				max-width: none;
-			}
 		}
 		&__text2 {
 			padding: 104px 0;
