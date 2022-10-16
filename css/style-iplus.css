@@ -805,8 +805,8 @@ body {
   .nav__scroll {
     display: block;
     position: fixed;
-    right: 10%;
-    bottom: 33%;
+    right: 2.5%;
+    bottom: 15%;
     z-index: 1000;
   }
   .nav__hamburger, .nav__slide-out {

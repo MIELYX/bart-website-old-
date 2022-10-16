@@ -48,7 +48,7 @@ table {
   margin: 0 auto;
   padding: 0 40px;
   width: 100%;
-  max-width: 1360px;
+  max-width: 1300px;
 }
 
 .btn {
@@ -413,7 +413,7 @@ body {
   background-position: center;
 }
 .what-i-do__card-mockup-one {
-  background-image: url("../img/iPlus.png");
+  background-image: url("../img/iPlus.jpg");
 }
 .what-i-do__card-mockup-two {
   background-image: url("../img/Healthcare.png");
