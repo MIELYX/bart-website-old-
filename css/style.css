@@ -52,6 +52,7 @@ table {
 }
 
 .btn {
+  display: inline-block;
   padding: 16px 32px;
   border-radius: 12px;
   background-color: #fff;
@@ -153,8 +154,8 @@ table {
 }
 .btn {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 100%;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .heading {
@@ -166,21 +167,21 @@ table {
   margin: 0 auto;
   max-width: 1000px;
   font-weight: 900;
-  font-size: 36px;
-  line-height: 49px;
+  font-size: 40px;
+  line-height: 150%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   text-align: center;
 }
 .heading-second {
   font-weight: 800;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 136.02%;
   text-transform: uppercase;
 }
 .heading-third, .heading-fourth {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 136.52%;
 }
 .heading-orange {
@@ -208,7 +209,7 @@ table {
   font-feature-settings: "salt" on;
 }
 .text-third, .text-fifth {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 164.43%;
   font-feature-settings: "salt" on;
 }
@@ -220,7 +221,7 @@ table {
 }
 .text-fifth {
   margin: 0 auto;
-  max-width: 220px;
+  max-width: 470px;
   text-align: center;
 }
 .text-navitem {
@@ -253,24 +254,14 @@ table {
     font-weight: 800;
     font-size: 36px;
   }
-  .text-third, .text-fifth {
-    font-size: 18px;
-  }
   .text-fifth {
     max-width: 340px;
-  }
-  .btn {
-    font-size: 16px;
-    line-height: 150%;
   }
 }
 @media (min-width: 992px) {
   .heading-first {
     font-size: 80px;
     line-height: 100px;
-  }
-  .text-fifth {
-    max-width: 470px;
   }
 }
 :root {
@@ -513,8 +504,8 @@ body {
 .lets-be-in-touch__card-icon {
   position: absolute;
   top: 50%;
-  left: -20px;
-  transform: translate(-50%, -50%);
+  left: -16px;
+  transform: translate(-100%, -50%);
 }
 
 .footer {
@@ -580,7 +571,7 @@ body {
   }
   .what-i-do__cards {
     padding-top: 4em;
-    gap: 6.5em;
+    gap: 5em;
   }
   .what-i-do__card {
     grid-template-columns: repeat(2, 1fr);
