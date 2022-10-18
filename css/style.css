@@ -254,9 +254,6 @@ table {
     font-weight: 800;
     font-size: 36px;
   }
-  .text-fifth {
-    max-width: 340px;
-  }
 }
 @media (min-width: 992px) {
   .heading-first {
