@@ -11,7 +11,7 @@ body {
 	background-color: $background;
 }
 
-.section{
+.section {
 	overflow: hidden;
 }
 
@@ -59,7 +59,7 @@ body {
 		opacity: 0;
 		transform: translateX(105%);
 		transition: transform 1s, opacity 1s;
-		&-btn{
+		&-btn {
 			margin-top: 0.5em;
 		}
 	}

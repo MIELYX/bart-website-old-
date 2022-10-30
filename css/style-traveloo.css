@@ -1,0 +1,632 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.btn {
+  font-family: Inter, "sans-serif";
+  font-weight: 600;
+  line-height: 150%;
+  padding: 16px 32px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  color: #050623;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+  background-color: #050623;
+  color: #f2f2f2;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  border: none;
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.hamburger__line {
+  border-radius: 2px;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+.heading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: #fff;
+}
+.heading-first {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+}
+.heading-second {
+  font-size: 24px;
+  line-height: 29px;
+}
+.heading-third {
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+.text-first {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.text-second, .text-third {
+  font-size: 18px;
+  line-height: 22px;
+}
+.text-third, .text-fifth {
+  font-weight: 700;
+}
+.text-fourth {
+  font-size: 16px;
+  line-height: 22px;
+}
+.text-sixth {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+.text-seventh {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.text-seventh-white {
+  color: #fff;
+}
+.text-eighth {
+  font-size: 12px;
+  line-height: 20px;
+  color: #cecece;
+}
+.text-nineth {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  color: #828391;
+}
+.text-navitem {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.text-navitem-slide {
+  font-size: 24px;
+}
+.text-700 {
+  font-weight: 700;
+}
+.text-grey {
+  color: rgba(255, 255, 255, 0.7);
+}
+.text-muted {
+  color: #828391;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+  .heading-second {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+:root {
+  scroll-behavior: smooth;
+  scroll-padding: 5em;
+  background-color: #050623;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+  background-color: #050623;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #050623;
+}
+.nav .container {
+  position: relative;
+}
+.nav__scroll {
+  display: none;
+}
+.nav__box {
+  display: grid;
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+.nav__sections {
+  display: none;
+}
+.nav__hamburger {
+  position: relative;
+  z-index: 4;
+}
+.nav__slide-out {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #050623;
+  z-index: 3;
+  opacity: 0;
+  transform: translateX(105%);
+  transition: transform 1s, opacity 1s;
+}
+.nav__slide-out-btn {
+  margin-top: 0.5em;
+}
+
+.slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sticky {
+  overflow: hidden;
+}
+
+.hero {
+  padding-top: 104px;
+}
+.hero__img {
+  width: 100%;
+}
+
+.iplus-app {
+  padding-top: 1.75em;
+  overflow: hidden;
+}
+.iplus-app__item {
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  background-color: #175cd3;
+}
+.iplus-app__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 2em;
+}
+.iplus-app__answers {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 12em;
+       column-gap: 12em;
+  row-gap: 2em;
+  padding-top: 4em;
+}
+.iplus-app__answer {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.iplus-app__answer-subelement {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.iplus-app__info {
+  margin-top: 11.5em;
+  margin-bottom: 7.5em;
+}
+.iplus-app__info-img {
+  display: none;
+}
+.iplus-app__info-title {
+  padding-bottom: 8px;
+}
+.iplus-app__bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.25em;
+}
+.iplus-app__info {
+  margin: 5.25em 0;
+}
+
+.market-research {
+  position: relative;
+  background-color: #0c143c;
+}
+.market-research__content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: repeat(2, auto);
+  gap: 24px;
+  padding: 3em 0 2.5em;
+}
+.market-research__content--another {
+  padding: 5.5em 0 4em;
+}
+.market-research__image img {
+  width: 100%;
+}
+.market-research__image-source {
+  padding-top: 16px;
+}
+.market-research::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(111.54deg, #1570ef 19.51%, #6fb1fc 102.81%);
+}
+.market-research .container {
+  position: relative;
+  z-index: 1;
+}
+.market-research__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.market-research__subtext-title {
+  padding-bottom: 12px;
+}
+.market-research__subtext-box {
+  display: grid;
+  gap: 16px;
+}
+.market-research__subtext-items {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.market-research__subtext-item {
+  max-width: 24px;
+}
+
+.competetive-analysis {
+  padding: 88px 0;
+}
+.competetive-analysis__title {
+  padding-bottom: 8px;
+}
+.competetive-analysis__item {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+}
+.competetive-analysis__item-img {
+  width: 100%;
+  border-radius: 12px;
+}
+.competetive-analysis__item-img--middle {
+  grid-row: 1/2;
+}
+.competetive-analysis__item-text-middle {
+  padding: 32px 0;
+  display: grid;
+  gap: 8px;
+}
+.competetive-analysis__item-checkpoint {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.competetive-analysis__box {
+  padding-top: 48px;
+  display: grid;
+  gap: 60px;
+}
+
+.personas {
+  padding-bottom: 88px;
+}
+.personas__title {
+  padding-bottom: 8px;
+}
+.personas__text {
+  padding-bottom: 48px;
+}
+.personas__box {
+  display: grid;
+  gap: 32px;
+}
+.personas__item {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.footer {
+  padding: 90px 0;
+}
+.footer__content {
+  text-align: center;
+}
+.footer__text {
+  padding-bottom: 16px;
+}
+
+.flow-diagram {
+  position: relative;
+}
+.flow-diagram__content {
+  position: relative;
+  padding: 48px 0;
+  z-index: 1;
+}
+.flow-diagram::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(111.54deg, #1570ef 19.51%, #6fb1fc 102.81%);
+}
+.flow-diagram__text {
+  padding-bottom: 48px;
+}
+.flow-diagram__img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 615px;
+}
+
+.template {
+  padding: 80px 0;
+}
+.template--two {
+  padding-top: 0;
+}
+.template__title {
+  padding-bottom: 8px;
+}
+.template__img {
+  margin-top: 48px;
+  width: 100%;
+}
+.template__img--one {
+  border-radius: 20px;
+}
+.template__img--two {
+  width: 107%;
+}
+
+.style-guide__img {
+  width: 100%;
+  max-width: 530px;
+}
+.style-guide__img--middle {
+  max-width: 170px;
+}
+.style-guide__title {
+  padding-bottom: 8px;
+}
+.style-guide__title2 {
+  padding-bottom: 12px;
+}
+.style-guide__text {
+  padding-bottom: 48px;
+}
+.style-guide__box1 {
+  display: grid;
+  gap: 32px;
+}
+.style-guide__box1 .market-research__subtext-item {
+  position: relative;
+  top: 2.5px;
+}
+.style-guide__box1-check {
+  display: grid;
+  gap: 24px;
+}
+.style-guide__box1-check2 {
+  display: grid;
+  gap: 36px;
+}
+
+@media (min-width: 576px) {
+  body {
+    overflow: visible !important;
+  }
+  .nav__scroll {
+    display: block;
+    position: fixed;
+    right: 2.5%;
+    bottom: 5%;
+    z-index: 1000;
+  }
+  .nav__hamburger, .nav__slide-out {
+    display: none;
+  }
+  .nav__sections {
+    display: grid;
+    grid-template-columns: repeat(3, -webkit-max-content);
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    gap: 8px;
+  }
+  .nav__sections .btn {
+    margin-left: 1.5em;
+  }
+  .nav__sections a:not(.btn) {
+    padding: 1em;
+  }
+  .hero {
+    padding-top: 104px;
+  }
+  .competetive-analysis__box {
+    gap: 80px;
+  }
+  .personas {
+    padding-bottom: 104px;
+  }
+  .personas__text {
+    padding-bottom: 64px;
+  }
+  .personas__box {
+    gap: 64px;
+  }
+  .flow-diagram__text {
+    padding-bottom: 64px;
+  }
+  .template {
+    padding: 104px 0;
+  }
+  .template--two {
+    padding-top: 0;
+  }
+  .template__img {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 900px) {
+  .iplus-app__bottom {
+    margin-top: 3em;
+  }
+  .iplus-app__info {
+    margin: 0;
+    max-width: 635px;
+  }
+  .iplus-app__info-img {
+    position: relative;
+    top: 45px;
+    display: block;
+    height: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .iplus-app {
+    padding-top: 2em;
+  }
+  .iplus-app__answers {
+    padding-top: 5.25em;
+  }
+  .footer {
+    padding-top: 104px;
+    padding-bottom: 64px;
+  }
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__text {
+    padding-bottom: 0;
+  }
+  .competetive-analysis {
+    padding: 104px 0;
+  }
+  .competetive-analysis__box {
+    padding-top: 64px;
+  }
+  .competetive-analysis__item {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .competetive-analysis__item-img--middle {
+    grid-column: 2/3;
+  }
+  .style-guide__text {
+    padding-bottom: 64px;
+  }
+  .style-guide__box1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media (min-width: 1100px) {
+  .market-research__image img {
+    width: auto;
+  }
+  .market-research__content {
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
+  }
+}/*# sourceMappingURL=style-traveloo.css.map */
