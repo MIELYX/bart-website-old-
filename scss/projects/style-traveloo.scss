@@ -14,7 +14,7 @@ body {
 .section {
 	overflow: hidden;
 }
-.hidden{
+.hidden {
 	overflow: hidden;
 }
 .img {
@@ -361,7 +361,9 @@ body {
 		}
 	}
 }
-
+.mod {
+	align-items: flex-start;
+}
 @media (min-width: 576px) {
 	body {
 		overflow: visible !important;

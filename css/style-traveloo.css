@@ -540,6 +540,10 @@ body {
   gap: 32px;
 }
 
+.mod {
+  align-items: flex-start;
+}
+
 @media (min-width: 576px) {
   body {
     overflow: visible !important;
