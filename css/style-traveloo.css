@@ -540,7 +540,50 @@ body {
   gap: 32px;
 }
 
+.high-fidelity {
+  padding-bottom: 88px;
+}
 .high-fidelity__title {
+  padding-bottom: 8px;
+}
+.high-fidelity__imgbox {
+  padding-top: 48px;
+  display: grid;
+  gap: 32px;
+}
+
+.takeaways {
+  overflow: hidden;
+}
+.takeaways__middle {
+  padding-top: 48px;
+  display: grid;
+  gap: 64px;
+}
+.takeaways__box {
+  display: grid;
+  gap: 24px;
+}
+.takeaways__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 16px;
+  border-radius: 12px;
+  background-color: rgba(248, 248, 248, 0.1);
+}
+.takeaways__img {
+  position: relative;
+  transform: translateX(7.5%);
+}
+
+.summary {
+  padding-top: 204px;
+}
+.summary__content img {
+  display: none;
+}
+.summary__title {
   padding-bottom: 8px;
 }
 
@@ -602,6 +645,13 @@ body {
   .template__img {
     margin-top: 64px;
   }
+  .high-fidelity {
+    padding-bottom: 106px;
+  }
+  .high-fidelity__imgbox {
+    gap: 106px;
+    padding-top: 64px;
+  }
 }
 @media (min-width: 900px) {
   .iplus-app__bottom {
@@ -649,6 +699,9 @@ body {
   .competetive-analysis__item-img--middle {
     grid-column: 2/3;
   }
+  .style-guide {
+    padding-bottom: 16px;
+  }
   .style-guide__text {
     padding-bottom: 64px;
   }
@@ -660,6 +713,22 @@ body {
   .style-guide__fv {
     margin-bottom: 88px;
   }
+  .summary {
+    padding-bottom: 0;
+  }
+  .summary__content {
+    display: grid;
+    grid-template-columns: 320px auto;
+    align-items: center;
+    gap: 120px;
+    overflow: hidden;
+  }
+  .summary__content img {
+    position: relative;
+    top: 20px;
+    display: block;
+    width: 100%;
+  }
 }
 @media (min-width: 1100px) {
   .market-research__image img {
@@ -669,5 +738,15 @@ body {
     align-items: center;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, auto);
+  }
+  .takeaways__middle {
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .takeaways__img {
+    position: relative;
+    transform: translateX(15%);
   }
 }/*# sourceMappingURL=style-traveloo.css.map */
