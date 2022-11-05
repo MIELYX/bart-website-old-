@@ -540,6 +540,10 @@ body {
   gap: 32px;
 }
 
+.high-fidelity__title {
+  padding-bottom: 8px;
+}
+
 .mod {
   align-items: flex-start;
 }

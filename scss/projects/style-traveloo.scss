@@ -361,6 +361,13 @@ body {
 		}
 	}
 }
+
+.high-fidelity {
+	&__title {
+		padding-bottom: 8px;
+	}
+}
+
 .mod {
 	align-items: flex-start;
 }
