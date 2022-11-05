@@ -16,10 +16,6 @@ a {
   color: inherit;
 }
 
-img {
-  height: auto;
-}
-
 input,
 button,
 textarea,
@@ -195,6 +191,23 @@ body {
 
 .section {
   overflow: hidden;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+}
+.img-1 {
+  max-width: 394px;
+}
+.img-2 {
+  max-width: 146px;
+}
+.img-3 {
+  max-width: 322px;
 }
 
 .nav {
@@ -478,6 +491,18 @@ body {
   width: 107%;
 }
 
+.style-guide .box2 {
+  align-items: center;
+}
+.style-guide__fv {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 64px;
+}
+.style-guide__inc {
+  width: 100%;
+  border-radius: 12px;
+}
 .style-guide__img {
   width: 100%;
   max-width: 530px;
@@ -497,18 +522,22 @@ body {
 .style-guide__box1 {
   display: grid;
   gap: 32px;
+  padding-bottom: 64px;
 }
 .style-guide__box1 .market-research__subtext-item {
   position: relative;
   top: 2.5px;
 }
 .style-guide__box1-check {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 .style-guide__box1-check2 {
   display: grid;
-  gap: 36px;
+  grid-template-rows: repeat(3, -webkit-max-content);
+  grid-template-rows: repeat(3, max-content);
+  gap: 32px;
 }
 
 @media (min-width: 576px) {
@@ -616,8 +645,12 @@ body {
     padding-bottom: 64px;
   }
   .style-guide__box1 {
+    padding-bottom: 88px;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+  }
+  .style-guide__fv {
+    margin-bottom: 88px;
   }
 }
 @media (min-width: 1100px) {
