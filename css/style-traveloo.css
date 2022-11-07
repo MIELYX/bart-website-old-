@@ -179,7 +179,6 @@ table {
 }
 :root {
   scroll-behavior: smooth;
-  scroll-padding: 5em;
   background-color: #050623;
 }
 

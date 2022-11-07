@@ -179,7 +179,6 @@ table {
 }
 :root {
   scroll-behavior: smooth;
-  scroll-padding: 5em;
   background-color: #050623;
 }
 
@@ -690,6 +689,10 @@ body {
 .prototype__window {
   display: none;
 }
+.prototype__line {
+  width: 100%;
+  height: 1px;
+}
 
 .usability {
   padding-bottom: 88px;
@@ -879,10 +882,12 @@ body {
   .prototype__window {
     display: block;
     margin-top: 104px;
+    width: 100%;
+    height: 800px;
   }
   .prototype__window iframe {
     width: 100%;
-    height: 800px;
+    height: 100%;
   }
 }
 @media (min-width: 768px) {
