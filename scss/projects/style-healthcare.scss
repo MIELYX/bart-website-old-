@@ -439,10 +439,16 @@ body {
 		position: relative;
 		transform: translateX(7.5%);
 	}
+	&__line{
+		height: 1px;
+		width: 100%;
+		background-color: #118BEB;
+	}
 }
 
 .summary {
 	padding-top: 120px;
+	padding-bottom: 88px;
 	&__content {
 		img {
 			display: none;
