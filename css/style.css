@@ -407,10 +407,13 @@ body {
   background-image: url("../img/main-mokcup-iplus.jpg");
 }
 .what-i-do__card-mockup-two {
-  background-image: url("../../img/main-mockup-healthcare.jpg");
+  background-image: url("../img/main-mockup-healthcare.jpg");
 }
 .what-i-do__card-mockup-three {
   background-image: url("../img/traveloo-mockup.jpg");
+}
+.what-i-do__card-mockup-four {
+  background-image: url("../img/hifi-mockup-1.jpg");
 }
 
 .know-me-better {
